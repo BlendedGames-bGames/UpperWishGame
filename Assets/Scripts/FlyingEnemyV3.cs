@@ -32,7 +32,7 @@ public class FlyingEnemyV3 : MonoBehaviour
         float distanciaY = objetivo.position.y - transform.position.y;
         double multDistancia = Math.Pow(distanciaX,2) *Math.Pow(distanciaY,2);
         distancia = Math.Sqrt(multDistancia);
-        if(Math.Abs(distancia)< 0.96)
+        if(Math.Abs(distancia)< 0.8)
         {
             time = 3;
             debePerseguir = true;
