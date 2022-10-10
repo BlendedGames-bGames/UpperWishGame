@@ -29,7 +29,7 @@ public class Turret : MonoBehaviour
         double multDistancia = Math.Pow(distanciaX,2) *Math.Pow(distanciaY,2);
         distancia = Math.Sqrt(multDistancia);
 
-        if(distancia <= 8)
+        if(distancia <= 1.28)
         {
             
             if(movimiento)
