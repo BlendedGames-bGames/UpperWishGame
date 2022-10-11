@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FindTarget : MonoBehaviour{
 
     [SerializeField] private float detectionRange;
     [SerializeField] private float outsideRange;
-    public bool detectedEnemy;
 
+    public List<Collider2D> targetList = new List<Collider2D>();
+    public bool detectedEnemy;
 
     // Start is called before the first frame update
     void Start(){
@@ -22,14 +24,17 @@ public class FindTarget : MonoBehaviour{
         foreach (Collider2D collider2D in outsideList) {
             if (collider2D.CompareTag("Enemy") && colliderList.Contains(collider2D)){
                 detectedEnemy = true;
-                collider2D.GetComponent<SpriteRenderer>().material.color = new Color(1, 0.5f, 0.5f);
+                if (!targetList.Contains(collider2D)){
+                    targetList.Add(collider2D);
+                }
             }
-            if (collider2D.CompareTag("Enemy") && !colliderList.Contains(collider2D)){
+            else if (collider2D.CompareTag("Enemy") && !colliderList.Contains(collider2D)){
                 detectedEnemy = false;
-                collider2D.GetComponent<SpriteRenderer>().material.color = Color.white;
+                if (targetList.Contains(collider2D)) {
+                    targetList.Remove(collider2D);
+                }
             }
-        print(collider2D);
         }
-        
     }
+
 }

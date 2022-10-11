@@ -5,16 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PolygonCollider2D))]
 
-public class homingProyectile : MonoBehaviour{
+public class HomingProyectile : MonoBehaviour{
 
     public Transform target;
     public float speed = 10f;
 
     private Rigidbody2D proyectile;
 
-    // Start is called before the first frame update
+    // Se inicia el componente rigidBody
     void Start(){
         proyectile = GetComponent<Rigidbody2D>();
+        target = GetComponentInChildren<TargetController>().selectedTarget;
     }
 
     // Update is called once per frame
@@ -30,6 +31,7 @@ public class homingProyectile : MonoBehaviour{
 
     private void OnTriggerEnter2D(Collider2D collision) {
 
+        //
         Destroy(gameObject);
     }
 
