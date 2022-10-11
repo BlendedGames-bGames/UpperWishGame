@@ -173,7 +173,7 @@ MonoBehaviour:
   isMoving: 0
   isInmune: 0
   speed: 1
-  jumpForce: 5
+  jumpForce: 3
   movHor: 0
   inmmuneTimeCnt: 0
   inmmuneTime: 0.5
