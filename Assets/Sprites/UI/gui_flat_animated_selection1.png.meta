@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de3c0eac21ec8c34b8b2a24ff7c00e4e
+guid: abb29a45f0810d04f9ae023330022b0e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,53 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flying (46x30)_0
+      name: gui_flat_animated_selection1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 46
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf1499a71ebd0904f87dd558edb6825c
-      internalID: -180952469
+      spriteID: fb128a5df00a4cd4383e1507dec1e729
+      internalID: -873448914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flying (46x30)_1
+      name: gui_flat_animated_selection1_1
       rect:
         serializedVersion: 2
-        x: 46
+        x: 32
         y: 0
-        width: 46
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 040a1787ede018446921d657e8f4a827
-      internalID: 63550686
+      spriteID: e5197500d853c0241a6cbeacacf30fbb
+      internalID: -721191460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flying (46x30)_2
+      name: gui_flat_animated_selection1_2
       rect:
         serializedVersion: 2
-        x: 92
+        x: 64
         y: 0
-        width: 46
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3b0300339eb6104f8738764b9fefe94
-      internalID: -988694025
+      spriteID: 25449fe4bba54bc43b0480ffa838a0b1
+      internalID: 423876636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flying (46x30)_3
+      name: gui_flat_animated_selection1_3
       rect:
         serializedVersion: 2
-        x: 138
+        x: 96
         y: 0
-        width: 46
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,71 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a43a5e6435989e640bf6a933c2df3529
-      internalID: 1772429605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flying (46x30)_4
-      rect:
-        serializedVersion: 2
-        x: 184
-        y: 0
-        width: 46
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e62d2e9228dec4468a20126adc281d4
-      internalID: 480023521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flying (46x30)_5
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 0
-        width: 46
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9869883ce6c89b643adf6172532fb736
-      internalID: -2062026631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flying (46x30)_6
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 0
-        width: 46
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 592b05668ce881740b9e2b5496e3973a
-      internalID: -1566651816
+      spriteID: d742448d7114bb445af63b8e05091ccf
+      internalID: -1963502745
       vertices: []
       indices: 
       edges: []
@@ -298,13 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Flying (46x30)_0: -180952469
-      Flying (46x30)_6: -1566651816
-      Flying (46x30)_4: 480023521
-      Flying (46x30)_2: -988694025
-      Flying (46x30)_1: 63550686
-      Flying (46x30)_3: 1772429605
-      Flying (46x30)_5: -2062026631
+      gui_flat_animated_selection1_1: -721191460
+      gui_flat_animated_selection1_3: -1963502745
+      gui_flat_animated_selection1_0: -873448914
+      gui_flat_animated_selection1_2: 423876636
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
