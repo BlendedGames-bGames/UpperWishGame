@@ -5,7 +5,7 @@ using System;
 
 public class Turret : MonoBehaviour
 {
-    bool movimiento;
+    public bool movimiento;
     Animator anim;
     int disparoID;
     private float movHor = 1; 
@@ -14,6 +14,8 @@ public class Turret : MonoBehaviour
     public Transform Torreta; // sera para saber su rotacion;
     public GameObject Bullet;
     public float time = 1;
+     public bool disparo;
+     public int comprobar; // variable para comprobar si movimiento viene de estar atacando o estar a distancia, si es 1, atacando,si es 2 es distancia
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +33,11 @@ public class Turret : MonoBehaviour
 
         if(distancia <= 1.28)
         {
-            
+            if(comprobar == 2)
+            {
+                movimiento = true;
+                comprobar = 1;
+            }
             if(movimiento)
             {
                 if(time == 1)
@@ -52,6 +58,12 @@ public class Turret : MonoBehaviour
                 
             }
 
+        }
+        else
+        {
+            movimiento = false;
+            anim.SetBool(disparoID, movimiento);
+            comprobar = 2;
         }
     }
 
