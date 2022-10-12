@@ -33,7 +33,7 @@ public class SlimeEnemy : MonoBehaviour
         isGroundFloor =(Physics2D.Raycast(new Vector3(transform.position.x, transform.position.y - floorCheckY, transform.position.z )
         , new Vector3(movHor, 0, 0), frontGrndRayDist, groundLayer));// revisa la distancia en x en 1 hacia delante si se mueve en esa direccion o 1 hacia atras en caso contrario
 
-        if (isGroundFloor)//mientras encuentre piso no hara nada
+        if (!isGroundFloor)//mientras encuentre piso no hara nada
             movHor = movHor * -1;
 
         // Choque con pared
