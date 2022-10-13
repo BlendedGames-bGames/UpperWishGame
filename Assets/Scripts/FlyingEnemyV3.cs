@@ -70,5 +70,32 @@ public class FlyingEnemyV3 : MonoBehaviour
     }
 
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // dañar al player
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Daño al personaje"); //manda un mensaje por consola
+            player.obj.getDamage();
+        }
+
+    }
+
+    /*void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Destruye al enemigo
+        if(collision.gameObject.CompareTag("P_Attack"))
+        {
+            getKilled();
+        }
+
+    }
+
+    private void getKilled()
+    {
+         gameObject.SetActive(false); // funcion que desactiva el objeto
+    } */
+
+
 
 }
