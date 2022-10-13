@@ -22,13 +22,13 @@ public class FindTarget : MonoBehaviour{
         Collider2D[] colliderList = Physics2D.OverlapCircleAll(transform.position, detectionRange);
         Collider2D[] outsideList = Physics2D.OverlapCircleAll(transform.position, outsideRange);
         foreach (Collider2D collider2D in outsideList) {
-            if (collider2D.CompareTag("Enemy") && colliderList.Contains(collider2D)){
+            if (collider2D.CompareTag("Enemy") && colliderList.Contains(collider2D))  {
                 detectedEnemy = true;
                 if (!targetList.Contains(collider2D)){
                     targetList.Add(collider2D);
                 }
             }
-            else if (collider2D.CompareTag("Enemy") && !colliderList.Contains(collider2D)){
+            else if (collider2D.CompareTag("Enemy") && !colliderList.Contains(collider2D))  { 
                 detectedEnemy = false;
                 if (targetList.Contains(collider2D)) {
                     targetList.Remove(collider2D);

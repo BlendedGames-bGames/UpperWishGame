@@ -202,7 +202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24012456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.915, y: 0.245, z: 0}
+  m_LocalPosition: {x: -0.749, y: 0.168, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -382,7 +382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228990796}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.29500002, y: 0.816, z: 0}
+  m_LocalPosition: {x: 0.8909999, y: 0.272, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 1
-  outsideRange: 2
+  outsideRange: 3
   targetList: []
   detectedEnemy: 0
 --- !u!58 &422504755
@@ -939,7 +939,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938520101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.764, y: -0.056, z: 0}
+  m_LocalPosition: {x: -0.407, y: 0.057, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1047,6 +1047,7 @@ MonoBehaviour:
   lockedEnemy: 0
   lockedOn: 0
   selectedTarget: {fileID: 0}
+  foundTargets: {fileID: 422504753}
 --- !u!95 &957323743
 Animator:
   serializedVersion: 4
@@ -1182,7 +1183,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 1.9540927
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1339,7 +1340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127974779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.70199996, y: 0.627, z: 0}
+  m_LocalPosition: {x: 0.484, y: 0.083, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
