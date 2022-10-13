@@ -8,7 +8,7 @@ public class ReiniciarJuego : MonoBehaviour
     // Start is called before the first frame update
    public void Reiniciar()
     {
-        SceneManager.LoadScene("ScenaPrototipo1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     // Update is called once per frame

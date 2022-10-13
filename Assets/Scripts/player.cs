@@ -25,7 +25,7 @@ public class player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer spr;
-
+    public GameObject reiniciar;
 
 void Awake()
 {
@@ -39,6 +39,8 @@ void Awake()
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spr = GetComponent<SpriteRenderer>();
+        Time.timeScale=1f;
+        reiniciar.SetActive(false);
 
     }
 
@@ -94,6 +96,8 @@ void Awake()
         lives--;
         if(lives <= 0)
             Destroy(gameObject);
+           Reiniciar();
+            
     }
 
     public void addLive()//funcion que añade las vidas en caso de que no sobrepase el maximo permitido.
@@ -107,5 +111,10 @@ void Awake()
     void OnDestroy()
     {
         obj = null;
+    }
+    public void Reiniciar(){
+        reiniciar.SetActive(true);
+        Time.timeScale=0f;
+
     }
 }
