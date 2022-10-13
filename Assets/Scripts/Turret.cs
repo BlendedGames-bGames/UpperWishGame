@@ -51,8 +51,8 @@ public class Turret : MonoBehaviour
                 movimiento = false;
                 anim.SetBool(disparoID,movimiento);
                 Invoke("DispararProyectil",0.4f);
-                Invoke("DispararProyectil",0.55f);
-                Invoke("DispararProyectil",0.7f);
+                //Invoke("DispararProyectil",0.55f);
+                //Invoke("DispararProyectil",0.7f);
                 Invoke("Moverse",3);
                 
                 

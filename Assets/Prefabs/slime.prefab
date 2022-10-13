@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 73204416533735699}
   - component: {fileID: 73204416533735698}
   - component: {fileID: 73204416533735711}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -164,8 +164,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  frontGrndRayDist: 0.1
+  frontGrndRayDist: 0.25
   floorCheckY: 0.52
-  frontCheck: 0.3
+  frontCheck: 0.51
   frontDist: 0.001
   scoreGive: 50
