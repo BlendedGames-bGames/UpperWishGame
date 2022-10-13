@@ -82,6 +82,6 @@ public class SlimeEnemy : MonoBehaviour
 
     private void getKilled()
     {
-         gameObject.SetActive(false); // funcion que desactiva el objeto
+         Destroy(gameObject); // funcion que desactiva el objeto
     } 
 }

@@ -93,7 +93,7 @@ void Awake()
     {
         lives--;
         if(lives <= 0)
-            this.gameObject.SetActive(false);
+            Destroy(gameObject);
     }
 
     public void addLive()//funcion que añade las vidas en caso de que no sobrepase el maximo permitido.

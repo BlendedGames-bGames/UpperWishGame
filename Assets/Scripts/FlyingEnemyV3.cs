@@ -90,11 +90,11 @@ public class FlyingEnemyV3 : MonoBehaviour
         }
 
     }
-
+*/
     private void getKilled()
     {
-         gameObject.SetActive(false); // funcion que desactiva el objeto
-    } */
+        Destroy(gameObject); // funcion que desactiva el objeto
+    } 
 
 
 
