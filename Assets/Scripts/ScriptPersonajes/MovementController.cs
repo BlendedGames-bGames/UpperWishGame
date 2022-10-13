@@ -26,8 +26,6 @@ public class MovementController : MonoBehaviour {
                 crouch = false;
             }
 
-
-
     }
     void FixedUpdate() {
 

@@ -13,22 +13,33 @@ public class TargetController : MonoBehaviour {
     public Transform selectedTarget;
 
     private SpriteRenderer targetAnimation;
-    private FindTarget foundTargets;
+    public FindTarget foundTargets;
 
 
     void Start() {
-        foundTargets = GetComponentInParent<FindTarget>();
         targetAnimation = GetComponent<SpriteRenderer>();
-        lockedOn = false;
+
         lockedEnemy = 0;
+        lockedOn = false;
+       
     }
 
-    // Update is called once per frame
-    void Update() {
 
-       
+    void Update() {
+        // si el elemento seleccionado se vuelve nulo
+        if (selectedTarget == null ) {
+            targetAnimation.enabled = false;
+            lockedOn = false;
+
+
+            Debug.Log(lockedEnemy);
+            Debug.Log("hay objetos" + foundTargets.targetList.Count);
+            foundTargets.targetList.Remove(foundTargets.targetList[lockedEnemy]);
+            lockedEnemy = 0;
+        }
+
         // Si no hay nada en la lista de enemigos
-        if (foundTargets.targetList.Count == 0) {
+        else if (foundTargets.targetList.Count == 0) {
             targetAnimation.enabled = false;
             lockedOn = false;
         }
@@ -39,24 +50,27 @@ public class TargetController : MonoBehaviour {
             lockedOn = true;
 
             selectedTarget = foundTargets.targetList[lockedEnemy].transform;
+
             gameObject.transform.position = selectedTarget.position;
 
         }
 
+
+
         // Cambiar el target con la rueda del mouse
-        if (Input.GetAxis("Mouse ScrollWheel") > 0 && foundTargets.targetList.Count >= 1) {
-            if (lockedEnemy == foundTargets.targetList.Count - 1) {
+        else if (Input.GetAxis("Mouse ScrollWheel") > 0 && foundTargets.targetList.Count >= 1 && selectedTarget != null) {
+             if (lockedEnemy == foundTargets.targetList.Count - 1) {
                 //Si ya se llego al final de la lista, se envia el puntero al inicio
                 lockedEnemy = 0;
                 selectedTarget = foundTargets.targetList[lockedEnemy].transform;
             }
-            else {
+             else {
                 //Se mueve al siguiente enemigo
                 lockedEnemy++;
                 selectedTarget = foundTargets.targetList[lockedEnemy].transform;
             }
         }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && foundTargets.targetList.Count >= 1) {
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && foundTargets.targetList.Count >= 1 && selectedTarget != null) {
             if (lockedEnemy == 0) {
                 //Si ya se llego al principio de la lista, se envia el puntero al final
                 lockedEnemy = foundTargets.targetList.Count - 1;
