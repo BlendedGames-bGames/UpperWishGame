@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
 
             ShootLaser();
-            //ShootProyectile();
+            ShootProyectile();
         }
         
     }

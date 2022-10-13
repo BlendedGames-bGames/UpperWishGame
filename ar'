@@ -1,0 +1,30 @@
+*   [1;34mfacf4dc[m - [1;32m(24 minutes ago)[m [37mMerge branch 'main' of github.com:curunirx/ProjectB[m [2;37m- overthinkin-mochi[m[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+[31m|[m[32m\[m  
+[31m|[m * [1;34m8e782ac[m - [1;32m(4 hours ago)[m [37mAñade segundo nivel de prueba y cambio de nivel[m [2;37m- Andres-Araya[m[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+[31m|[m * [1;34mb3bbad5[m - [1;32m(13 hours ago)[m [37mAñadido el enemigo terrestre slime[m [2;37m- Francisco Moreno[m[m[m
+[31m|[m * [1;34m6f39ff4[m - [1;32m(14 hours ago)[m [37marreglo codigo de enemigo torreta,y cambio de sprite de este[m [2;37m- Francisco Moreno[m[m[m
+[31m|[m *   [1;34m55a5b47[m - [1;32m(2 days ago)[m [37mMerge remote-tracking branch 'origin/wip-homing-proyectile' into main[m [2;37m- Francisco Moreno[m[m[m
+[31m|[m [33m|[m[34m\[m  
+* [33m|[m [34m\[m   [1;34m79f998f[m - [1;32m(2 days ago)[m [37mMerge branch 'wip-homing-proyectile'[m [2;37m- overthinkin-mochi[m[m[m
+[33m|[m[34m\[m [33m\[m [34m\[m  
+[33m|[m [34m|[m[33m/[m [34m/[m  
+[33m|[m[33m/[m[34m|[m [34m/[m   
+[33m|[m [34m|[m[34m/[m    
+[33m|[m * [1;34m8a55c34[m - [1;32m(2 days ago)[m [37mSistema de target y ataque con proyectiles terminado[m [2;37m- overthinkin-mochi[m[m[33m ([m[1;31morigin/wip-homing-proyectile[m[33m)[m[m
+[33m|[m * [1;34me3f65d3[m - [1;32m(3 days ago)[m [37mProyectiles y script de armas para el personaje[m [2;37m- overthinkin-mochi[m[m[m
+[33m|[m * [1;34m6a39e1c[m - [1;32m(3 days ago)[m [37mSprites y Scripts para proyectiles y deteccion de enemigos[m [2;37m- overthinkin-mochi[m[m[m
+* [36m|[m [1;34ma89ce3b[m - [1;32m(2 days ago)[m [37marreglo funcionalidades de la torreta,entre otros[m [2;37m- Francisco Moreno[m[m[m
+* [36m|[m [1;34mf3febc1[m - [1;32m(3 days ago)[m [37mcambios sin guardar del commit anterior[m [2;37m- Francisco Moreno[m[m[m
+* [36m|[m [1;34m35669c2[m - [1;32m(3 days ago)[m [37mcreacion Bat, su prefab, creado un jugador de pruebas[m [2;37m- Francisco Moreno[m[m[m
+* [36m|[m [1;34m60b7c7c[m - [1;32m(3 days ago)[m [37mAñadido Cambios a los scripts de los 3 enemigos basicos[m [2;37m- Francisco Moreno[m[m[m
+[1;31m|[m[1;31m\[m[36m|[m 
+* [36m|[m [1;34m11847b9[m - [1;32m(3 days ago)[m [37mSe agrega menu de pausa y opciones[m [2;37m- Benja Cruz[m[m[m
+[36m|[m[36m/[m  
+* [1;34mec6822c[m - [1;32m(7 days ago)[m [37mSe agrega nuevas funcionalidades al menú de opciones[m [2;37m- Benja Cruz[m[m[m
+* [1;34m303dcf0[m - [1;32m(7 days ago)[m [37mAñadido scripts prototipos y enemigo volador para prueba[m [2;37m- Francisco Moreno[m[m[m
+* [1;34m426ed3f[m - [1;32m(7 days ago)[m [37mSe añade menú de inicio[m [2;37m- Benja Cruz[m[m[m
+* [1;34m115be2a[m - [1;32m(9 days ago)[m [37mScene prototipo1[m [2;37m- Andres-Araya[m[m[m
+* [1;34mcab6bfb[m - [1;32m(12 days ago)[m [37mAñadidos 8 Packs Assets de tilesets y backgrounds.[m [2;37m- overthinkin-mochi[m[m[m
+* [1;34ma0e207d[m - [1;32m(12 days ago)[m [37mCambio nombre escena de ejemplo a principal[m [2;37m- Francisco Moreno[m[m[m
+* [1;34mb0923c4[m - [1;32m(12 days ago)[m [37mPrimer comit proyecto vacio y gitignore[m [2;37m- Francisco Moreno[m[m[m
+* [1;34m138e40a[m - [1;32m(12 days ago)[m [37mInitial commit[m [2;37m- curunirx[m[m[m

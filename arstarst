@@ -1,0 +1,144 @@
+*   [1;34m79f998f[m - [1;36mMon, 10 Oct 2022 22:34:11 -0300[m [1;32m(2 minutes ago)[m[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+[31m|[m[32m\[m            [37mMerge branch 'wip-homing-proyectile'[m [2;37m- overthinkin-mochi[m
+[31m|[m * [1;34m8a55c34[m - [1;36mMon, 10 Oct 2022 22:27:43 -0300[m [1;32m(8 minutes ago)[m[m[33m ([m[1;31morigin/wip-homing-proyectile[m[33m)[m[m
+[31m|[m [32m|[m           [37mSistema de target y ataque con proyectiles terminado[m [2;37m- overthinkin-mochi[m
+[31m|[m * [1;34me3f65d3[m - [1;36mMon, 10 Oct 2022 00:38:23 -0300[m [1;32m(22 hours ago)[m[m[m
+[31m|[m [32m|[m           [37mProyectiles y script de armas para el personaje[m [2;37m- overthinkin-mochi[m
+[31m|[m * [1;34m6a39e1c[m - [1;36mSun, 9 Oct 2022 17:54:35 -0300[m [1;32m(29 hours ago)[m[m[m
+[31m|[m [32m|[m           [37mSprites y Scripts para proyectiles y deteccion de enemigos[m [2;37m- overthinkin-mochi[m
+* [32m|[m [1;34ma89ce3b[m - [1;36mMon, 10 Oct 2022 22:06:01 -0300[m [1;32m(30 minutes ago)[m[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+[32m|[m [32m|[m           [37marreglo funcionalidades de la torreta,entre otros[m [2;37m- Francisco Moreno[m
+* [32m|[m [1;34mf3febc1[m - [1;36mMon, 10 Oct 2022 02:41:37 -0300[m [1;32m(20 hours ago)[m[m[m
+[32m|[m [32m|[m           [37mcambios sin guardar del commit anterior[m [2;37m- Francisco Moreno[m
+* [32m|[m [1;34m35669c2[m - [1;36mMon, 10 Oct 2022 02:39:19 -0300[m [1;32m(20 hours ago)[m[m[m
+[32m|[m [32m|[m           [37mcreacion Bat, su prefab, creado un jugador de pruebas[m [2;37m- Francisco Moreno[m
+* [32m|[m [1;34m60b7c7c[m - [1;36mMon, 10 Oct 2022 00:49:15 -0300[m [1;32m(22 hours ago)[m[m[m
+[33m|[m[33m\[m[32m|[m           [37mAñadido Cambios a los scripts de los 3 enemigos basicos[m [2;37m- Francisco Moreno[m
+* [32m|[m [1;34m11847b9[m - [1;36mSun, 9 Oct 2022 23:55:48 -0300[m [1;32m(23 hours ago)[m[m[m
+[32m|[m[32m/[m            [37mSe agrega menu de pausa y opciones[m [2;37m- Benja Cruz[m
+* [1;34mec6822c[m - [1;36mThu, 6 Oct 2022 03:00:16 -0300[m [1;32m(5 days ago)[m[m[m
+[34m|[m           [37mSe agrega nuevas funcionalidades al menú de opciones[m [2;37m- Benja Cruz[m
+* [1;34m303dcf0[m - [1;36mWed, 5 Oct 2022 22:16:04 -0300[m [1;32m(5 days ago)[m[m[m
+[34m|[m           [37mAñadido scripts prototipos y enemigo volador para prueba[m [2;37m- Francisco Moreno[m
+* [1;34m426ed3f[m - [1;36mWed, 5 Oct 2022 20:47:23 -0300[m [1;32m(5 days ago)[m[m[m
+[34m|[m           [37mSe añade menú de inicio[m [2;37m- Benja Cruz[m
+* [1;34m115be2a[m - [1;36mMon, 3 Oct 2022 20:45:21 -0300[m [1;32m(7 days ago)[m[m[m
+[34m|[m           [37mScene prototipo1[m [2;37m- Andres-Araya[m
+* [1;34mcab6bfb[m - [1;36mSat, 1 Oct 2022 02:58:59 -0300[m [1;32m(10 days ago)[m[m[m
+[34m|[m           [37mAñadidos 8 Packs Assets de tilesets y backgrounds.[m [2;37m- overthinkin-mochi[m
+* [1;34ma0e207d[m - [1;36mFri, 30 Sep 2022 23:55:51 -0300[m [1;32m(10 days ago)[m[m[m
+[34m|[m           [37mCambio nombre escena de ejemplo a principal[m [2;37m- Francisco Moreno[m
+* [1;34mb0923c4[m - [1;36mFri, 30 Sep 2022 23:48:58 -0300[m [1;32m(10 days ago)[m[m[m
+[34m|[m           [37mPrimer comit proyecto vacio y gitignore[m [2;37m- Francisco Moreno[m
+* [1;34m138e40a[m - [1;36mFri, 30 Sep 2022 23:05:20 -0300[m [1;32m(10 days ago)[m[m[m
+            [37mInitial commit[m [2;37m- curunirx[m[33mcommit 79f998fca78025d7b68f5865c9d1281a08a2e8e6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: a89ce3b 8a55c34
+Author: overthinkin-mochi <64170546+overthinkin-mochi@users.noreply.github.com>
+Date:   Mon Oct 10 22:34:11 2022 -0300
+
+    Merge branch 'wip-homing-proyectile'
+
+[33mcommit 8a55c3414b8cd13654bf16ccad1c32794b2f4256[m[33m ([m[1;31morigin/wip-homing-proyectile[m[33m)[m
+Author: overthinkin-mochi <64170546+overthinkin-mochi@users.noreply.github.com>
+Date:   Mon Oct 10 22:27:43 2022 -0300
+
+    Sistema de target y ataque con proyectiles terminado
+
+[33mcommit a89ce3b33df14530b1aa58305bc8e24685e296ea[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Francisco Moreno <francisco.moreno.l@usach.cl>
+Date:   Mon Oct 10 22:06:01 2022 -0300
+
+    arreglo funcionalidades de la torreta,entre otros
+
+[33mcommit f3febc18803fcddf2857c4697ce74076a1480fd0[m
+Author: Francisco Moreno <francisco.moreno.l@usach.cl>
+Date:   Mon Oct 10 02:41:37 2022 -0300
+
+    cambios sin guardar del commit anterior
+
+[33mcommit 35669c22d1343f09e3d4a0e3d291f7d7beb8f81d[m
+Author: Francisco Moreno <francisco.moreno.l@usach.cl>
+Date:   Mon Oct 10 02:39:19 2022 -0300
+
+    creacion Bat, su prefab, creado un jugador de pruebas
+    
+    añadido un mapa de pruebas en otro escenario,junto con un jugador con fallos,pero es solo para probar funcionalidades
+
+[33mcommit 60b7c7c51a7de3b84c47deb49efa729db84de9b4[m
+Merge: 11847b9 11847b9
+Author: Francisco Moreno <francisco.moreno.l@usach.cl>
+Date:   Mon Oct 10 00:49:15 2022 -0300
+
+    Añadido Cambios a los scripts de los 3 enemigos basicos
+    
+    Se Añadio una version 3 del script del enemigo volador, se creo un enemigo torreta,con su respectivo proyectil, se borraron prefabs y scripts no utilizados o erroneos
+
+[33mcommit e3f65d3b06ad54bf6d7064018da99e01c90c27bb[m
+Author: overthinkin-mochi <64170546+overthinkin-mochi@users.noreply.github.com>
+Date:   Mon Oct 10 00:38:23 2022 -0300
+
+    Proyectiles y script de armas para el personaje
+
+[33mcommit 11847b98ae6551f74da3cadac6c0436f71aecc16[m
+Author: Benja Cruz <benjamin.cruz.v@usach.cl>
+Date:   Sun Oct 9 23:55:48 2022 -0300
+
+    Se agrega menu de pausa y opciones
+
+[33mcommit 6a39e1c764deb6076f65044d4911eca9c53341f2[m
+Author: overthinkin-mochi <64170546+overthinkin-mochi@users.noreply.github.com>
+Date:   Sun Oct 9 17:54:35 2022 -0300
+
+    Sprites y Scripts para proyectiles y deteccion de enemigos
+
+[33mcommit ec6822c848826855ebff4b2c1fb282535344fa5e[m
+Author: Benja Cruz <benjamin.cruz.v@usach.cl>
+Date:   Thu Oct 6 03:00:16 2022 -0300
+
+    Se agrega nuevas funcionalidades al menú de opciones
+
+[33mcommit 303dcf07a38ddc02388da91359dbd5dc3d49c9eb[m
+Author: Francisco Moreno <francisco.moreno.l@usach.cl>
+Date:   Wed Oct 5 22:16:04 2022 -0300
+
+    Añadido scripts prototipos y enemigo volador para prueba
+    
+    Enemigo no se encuentra bien configurado en esta versión.
+
+[33mcommit 426ed3f0ee3356f13feb3336738836c20264b836[m
+Author: Benja Cruz <benjamin.cruz.v@usach.cl>
+Date:   Wed Oct 5 20:47:23 2022 -0300
+
+    Se añade menú de inicio
+
+[33mcommit 115be2a5a41abbe0f3f21646fea07c7e3ac021e0[m
+Author: Andres-Araya <andres.araya@usach.cl>
+Date:   Mon Oct 3 20:45:21 2022 -0300
+
+    Scene prototipo1
+    
+    Se añado solo una escena donde colocar los personajes y enemigos para probar las mecánicas básicas de salto y desplazamiento
+
+[33mcommit cab6bfb48ad8badc986ec2db595f429a35ccfc0f[m
+Author: overthinkin-mochi <64170546+overthinkin-mochi@users.noreply.github.com>
+Date:   Sat Oct 1 02:58:59 2022 -0300
+
+    Añadidos 8 Packs Assets de tilesets y backgrounds.
+
+[33mcommit a0e207decfdaa251d8f030b06945b2918319cb78[m
+Author: Francisco Moreno <francisco.moreno.l@usach.cl>
+Date:   Fri Sep 30 23:55:51 2022 -0300
+
+    Cambio nombre escena de ejemplo a principal
+
+[33mcommit b0923c4bd97144a21d04abdabc343334e44d33a8[m
+Author: Francisco Moreno <francisco.moreno.l@usach.cl>
+Date:   Fri Sep 30 23:48:58 2022 -0300
+
+    Primer comit proyecto vacio y gitignore
+
+[33mcommit 138e40aa04be43223dcb950c871fec786fd17656[m
+Author: curunirx <54647464+curunirx@users.noreply.github.com>
+Date:   Fri Sep 30 23:05:20 2022 -0300
+
+    Initial commit
