@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,72 +16,78 @@ public class TargetController : MonoBehaviour {
     private SpriteRenderer targetAnimation;
     public FindTarget foundTargets;
 
+    public static List<FindTarget> FoundTargets = new List<FindTarget>();
 
     void Start() {
         targetAnimation = GetComponent<SpriteRenderer>();
-
         lockedEnemy = 0;
         lockedOn = false;
        
     }
+    private void FixedUpdate() {
 
-
-    void Update() {
-        // si el elemento seleccionado se vuelve nulo
-        if (selectedTarget == null ) {
-            targetAnimation.enabled = false;
-            lockedOn = false;
-
-
-            Debug.Log(lockedEnemy);
-            Debug.Log("hay objetos" + foundTargets.targetList.Count);
-            foundTargets.targetList.Remove(foundTargets.targetList[lockedEnemy]);
-            lockedEnemy = 0;
-        }
-
-        // Si no hay nada en la lista de enemigos
-        else if (foundTargets.targetList.Count == 0) {
-            targetAnimation.enabled = false;
-            lockedOn = false;
-        }
-
-        // Si hay elementos en la lista de enemigos
-        else if (foundTargets.targetList.Count >= 1) {
-            targetAnimation.enabled = true;
-            lockedOn = true;
-
-            selectedTarget = foundTargets.targetList[lockedEnemy].transform;
-
-            gameObject.transform.position = selectedTarget.position;
-
-        }
-
-
+       
 
         // Cambiar el target con la rueda del mouse
-        else if (Input.GetAxis("Mouse ScrollWheel") > 0 && foundTargets.targetList.Count >= 1 && selectedTarget != null) {
-             if (lockedEnemy == foundTargets.targetList.Count - 1) {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0 && FindTarget.targetList.Count > 1 ) {
+            if (lockedEnemy == FindTarget.targetList.Count - 1) {
                 //Si ya se llego al final de la lista, se envia el puntero al inicio
                 lockedEnemy = 0;
-                selectedTarget = foundTargets.targetList[lockedEnemy].transform;
+                selectedTarget = FindTarget.targetList[lockedEnemy].transform;
             }
-             else {
+            else {
                 //Se mueve al siguiente enemigo
                 lockedEnemy++;
-                selectedTarget = foundTargets.targetList[lockedEnemy].transform;
+                selectedTarget = FindTarget.targetList[lockedEnemy].transform;
             }
         }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && foundTargets.targetList.Count >= 1 && selectedTarget != null) {
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && FindTarget.targetList.Count > 1 ) {
             if (lockedEnemy == 0) {
                 //Si ya se llego al principio de la lista, se envia el puntero al final
-                lockedEnemy = foundTargets.targetList.Count - 1;
-                selectedTarget = foundTargets.targetList[lockedEnemy].transform;
+                lockedEnemy = FindTarget.targetList.Count - 1;
+                selectedTarget = FindTarget.targetList[lockedEnemy].transform;
             }
             else {
                 //Se mueve al enemigo anterior
                 lockedEnemy--;
-                selectedTarget = foundTargets.targetList[lockedEnemy].transform;
+                selectedTarget = FindTarget.targetList[lockedEnemy].transform;
             }
         }
     }
+
+    void Update() {
+
+        // si el elemento seleccionado se vuelve nulo
+        if (selectedTarget == null) {
+            lockedOn = false;
+            targetAnimation.enabled = false;
+
+            Debug.Log(lockedEnemy);
+            Debug.Log("hay objetos: " + FindTarget.targetList.Count);
+
+            if (FindTarget.targetList.Count >= 1) {
+                FindTarget.targetList.Remove(FindTarget.targetList[lockedEnemy]);
+            }
+            lockedEnemy = 0;
+
+        }
+
+        // Si hay elementos en la lista de enemigos
+        if (FindTarget.targetList.Count >= 1) {
+            targetAnimation.enabled = true;
+            lockedOn = true;
+
+            selectedTarget = FindTarget.targetList[lockedEnemy].transform;
+            gameObject.transform.position = selectedTarget.position;
+
+         }
+
+        // Si no hay nada en la lista de enemigos
+        else if (FindTarget.targetList.Count == 0) {
+            targetAnimation.enabled = false;
+            lockedOn = false;
+        }
+
+    }
 }
+

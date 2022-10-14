@@ -9,7 +9,7 @@ public class FindTarget : MonoBehaviour{
     [SerializeField] private float detectionRange;
     [SerializeField] private float outsideRange;
 
-    public List<Collider2D> targetList = new List<Collider2D>();
+    public static List<Collider2D> targetList = new List<Collider2D>();
     public bool detectedEnemy;
 
     // Start is called before the first frame update
