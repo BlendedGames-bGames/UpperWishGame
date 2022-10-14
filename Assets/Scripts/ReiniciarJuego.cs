@@ -16,4 +16,8 @@ public class ReiniciarJuego : MonoBehaviour
     {
         
     }
+
+    public void SalirJuego(){
+        SceneManager.LoadScene("Menu");
+    }
 }

@@ -38,6 +38,6 @@ public class MenuPausa : MonoBehaviour
     }
 
     public void SalirJuego(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        SceneManager.LoadScene("Menu");
     }
 }
