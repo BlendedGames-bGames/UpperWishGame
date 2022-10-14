@@ -7045,7 +7045,7 @@ PrefabInstance:
     - target: {fileID: 6374091538595357002, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
       propertyPath: objetivo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 691897282}
     - target: {fileID: 6374091538595357003, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -7926,6 +7926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af2adae1c31fe04bb17d894c47894d9, type: 3}
+--- !u!4 &691897282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6113894304594068063, guid: 1af2adae1c31fe04bb17d894c47894d9, type: 3}
+  m_PrefabInstance: {fileID: 690271556}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &692229232
 GameObject:
   m_ObjectHideFlags: 0
@@ -13800,7 +13805,7 @@ PrefabInstance:
     - target: {fileID: 6374091538595357002, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
       propertyPath: objetivo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 691897282}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
 --- !u!1 &994501094
@@ -17727,7 +17732,7 @@ PrefabInstance:
     - target: {fileID: 1304348602445508468, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
       propertyPath: objetivo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 691897282}
     - target: {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -75894,7 +75899,7 @@ PrefabInstance:
     - target: {fileID: 1304348602445508468, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
       propertyPath: objetivo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 691897282}
     - target: {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
       propertyPath: m_RootOrder
       value: 1
