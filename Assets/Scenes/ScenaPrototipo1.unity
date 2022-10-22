@@ -70383,22 +70383,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4869102302711776866, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
-      propertyPath: m_Size.x
-      value: 0.1929465
-      objectReference: {fileID: 0}
-    - target: {fileID: -4869102302711776866, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
-      propertyPath: m_Size.y
-      value: 0.19847038
-      objectReference: {fileID: 0}
-    - target: {fileID: -4869102302711776866, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.00092080235
-      objectReference: {fileID: 0}
-    - target: {fileID: -4869102302711776866, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.060764804
-      objectReference: {fileID: 0}
     - target: {fileID: 73204416533735701, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
       propertyPath: m_Name
       value: slime
