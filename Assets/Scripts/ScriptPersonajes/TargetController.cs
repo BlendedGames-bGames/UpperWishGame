@@ -67,6 +67,7 @@ public class TargetController : MonoBehaviour {
 
             if (FindTarget.targetList.Count >= 1) {
                 FindTarget.targetList.Remove(FindTarget.targetList[lockedEnemy]);
+                FindTarget.targetList.Sort();
             }
             lockedEnemy = 0;
 
