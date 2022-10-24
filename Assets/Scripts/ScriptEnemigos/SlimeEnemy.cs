@@ -59,16 +59,16 @@ public class SlimeEnemy : MonoBehaviour
         rb.velocity = new Vector2(movHor*speed, rb.velocity.y);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+   /* void OnCollisionEnter2D(Collision2D collision)
     {
         // dañar al player
         if(collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Daño al personaje"); //manda un mensaje por consola
-            player.obj.getDamage();
+            player.obj.getDamage(500);
         }
 
-    }
+    }*/
 
     void OnTriggerEnter2D(Collider2D collision)
     {

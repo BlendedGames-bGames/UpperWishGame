@@ -10,6 +10,10 @@ public class enemyPatrol : MonoBehaviour
     public float speed = 3f;//velocidad del enemigo
     private bool mustTurn; //variable para saber si debe girarse o no
 
+    [SerializeField]
+    private EnemyStats data;
+
+
     private Rigidbody2D rb;
     public Transform groundCheckPos; // variable para poder ver la posicion del objeto hijo groundCheck
     public LayerMask groundLayer;
@@ -19,7 +23,7 @@ public class enemyPatrol : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>(); 
         mustPatrol = true;
-        
+        speed = data.speed;
     }
 
     // Update is called once per frame

@@ -70,7 +70,7 @@ public class FlyingEnemyV3 : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    /*void OnCollisionEnter2D(Collision2D collision)
     {
         // dañar al player
         if(collision.gameObject.CompareTag("Player"))
@@ -79,7 +79,7 @@ public class FlyingEnemyV3 : MonoBehaviour
             player.obj.getDamage();
         }
 
-    }
+    }*/
 
     /*void OnTriggerEnter2D(Collider2D collision)
     {

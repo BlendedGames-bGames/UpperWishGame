@@ -91,12 +91,14 @@ void Awake()
         
     }
 
-    public void getDamage()
+    public void getDamage(int damage)
     {
-        lives--;
-        if(lives <= 0)
+        lives -= damage;
+        if(lives <= 0){
+
             Destroy(gameObject);
-           Reiniciar();
+            Reiniciar();
+        }
             
     }
 

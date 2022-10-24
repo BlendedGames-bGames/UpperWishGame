@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 73204416533735711}
   - component: {fileID: -4869102302711776866}
   - component: {fileID: -648043329213674795}
+  - component: {fileID: 4894328794700736217}
   m_Layer: 0
   m_Name: slime
   m_TagString: Enemy
@@ -243,8 +244,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mustPatrol: 0
   speed: 20
+  data: {fileID: 11400000, guid: 5b9c7f32f3f974b49830860d9d3415a2, type: 2}
   groundCheckPos: {fileID: 329430277}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   bodyCollider: {fileID: -4869102302711776866}
+--- !u!114 &4894328794700736217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73204416533735701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  speed: 0
+  health: 0
+  data: {fileID: 11400000, guid: 5b9c7f32f3f974b49830860d9d3415a2, type: 2}

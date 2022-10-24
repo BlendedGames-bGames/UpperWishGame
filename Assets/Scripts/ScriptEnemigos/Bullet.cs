@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Daño al personaje"); //manda un mensaje por consola
-            player.obj.getDamage();
+            player.obj.getDamage(5);
         }
         Destroy(gameObject);
     }
