@@ -96,7 +96,8 @@ public class PlayerMovementData : ScriptableObject
 	[Space(5)]
 	[Range(0.01f, 0.5f)] public float dashInputBufferTime;
 
-    #endregion
+	#endregion
+
 
     //Llamadas de unity para validar en el inspector
     private void OnValidate()
