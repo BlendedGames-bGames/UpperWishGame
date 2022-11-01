@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public static player obj;
+    public static Player obj;
 
     public int lives = 3;
     public bool isGrounded = false;
@@ -12,6 +12,7 @@ public class player : MonoBehaviour
     public bool isInmune = false;
 
     public float speed = 5f; //velocidad del pj
+    //public Vector2 speedx; Pruebas en caso de que la velocidad fuese un vector
     public float jumpForce = 3f;  // fuerza con la que puede saltar
     public float movHor; // //valor para el movimiento horizontal del personaje
 
