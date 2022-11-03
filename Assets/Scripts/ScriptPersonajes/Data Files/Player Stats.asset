@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7732559937bbd449f8145ef3b7c101, type: 3}
+  m_Name: Player Stats
+  m_EditorClassIdentifier: 
+  health:
+    BaseValue: 10
+  stamina:
+    BaseValue: 10
+  strenghtRaw:
+    BaseValue: 1
+  technikeRaw:
+    BaseValue: 0
+  constitutionRaw:
+    BaseValue: 0
+  dexterityRaw:
+    BaseValue: 0
+  invencibilityTime: 0.5
+  invencibilityColdown: 0.3
+  damageKnockbackAmount: 1
+  damageKnockbackSpeed: 0.4
+  damageKnockbackEndSpeed: {x: -25, y: -25}
+  damageKnockbackLerp: 0.118

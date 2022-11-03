@@ -1,4 +1,6 @@
+using Mochi.CharacterStats;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 [CreateAssetMenu(menuName = "Player Status Data")]	
 public class PlayerStatusData : ScriptableObject
@@ -6,13 +8,13 @@ public class PlayerStatusData : ScriptableObject
     #region STATS_PARAMETERS
     [Header("Stats")]
 
-    public float health;
-    public float stamina;
+    public CharacterStat health;
+    public CharacterStat stamina;
     [Space(5)]
-    public int strenghtRaw;                                 // Influye en el daño de los ataques
-    public float technikeRaw;                               // Influye en la cantidad de ataques
-    public float constitutionRaw;                           // Influye en la bonificacion de vida
-    public float dexterityRaw;                              // Influye en la velocidad de movimiento y en la velocidad de ataque
+    public CharacterStat strenghtRaw;                                // Influye en el daño de los ataques
+    public CharacterStat technikeRaw;                               // Influye en la cantidad de ataques
+    public CharacterStat constitutionRaw;                           // Influye en la bonificacion de vida
+    public CharacterStat dexterityRaw;                              // Influye en la velocidad de movimiento y en la velocidad de ataque
 
     #endregion
 
