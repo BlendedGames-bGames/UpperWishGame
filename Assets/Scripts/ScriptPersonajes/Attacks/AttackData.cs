@@ -1,12 +1,13 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Attack Data")]
-public class WeaponData : ScriptableObject
+public class AttackData : ScriptableObject
 {
-    #region WEAPON_PARAMETERS
-    [Header("Weapon")]
+    #region ATTACK_PARAMETERS
+    [Header("Attack")]
 
     public float attackTimes;                   // Cantidad de veces que se dispara un proyectil con el comando de ataque
+    public float attackSpeed;                   // Velocidad del proyectil de ataque
     public float attackDistance;                // Multiplicador de distancia de ataque
     [Space(5)]
     public float attackColdown;                 // Tiempo en el que el ataque vuelve a estar disponible

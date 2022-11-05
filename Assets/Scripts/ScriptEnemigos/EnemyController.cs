@@ -4,12 +4,6 @@ using UnityEngine;
 using System.Linq;
 public class EnemyController : MonoBehaviour
 {
-    //(SEBA): aca meto la lista de enemigos y todo lo que necesito para el script de target nuevo
-    public static List<EnemyController> enemyList = new List<EnemyController>();
-    public static List<EnemyController> GetEnemyList(){ return enemyList; }
-    // se crea la lista y se crea la funcion publica para obtener lo que hay dentro de la lista de enemigos
-
-
     [SerializeField]
     int damage;
     [SerializeField]
@@ -30,10 +24,7 @@ public class EnemyController : MonoBehaviour
     private float tiempoEnemigos;// variable para el tiempo de aparicion de enemigos
     private float tiempoSiguienteEnemigo; //variable para comprobar cuando hacer la aparicion*/
 
-    private void Awake()
-        {
-        enemyList.Add(this);
-        }
+
 
     //private GameObject player;
     // Start is called before the first frame update
@@ -60,7 +51,6 @@ public class EnemyController : MonoBehaviour
             CrearEnemigo();
         }*/
     }
-
 
     void SetEnemyValues() // funcion que copia los valores de vida,dano y velocidad del objeto scriptable EnemyStats
     {
@@ -94,8 +84,7 @@ public class EnemyController : MonoBehaviour
     {
         health -= damage;
         if(health <= 0){
-            
-            enemyList.Remove(this);
+
             Destroy(gameObject);
             
         }

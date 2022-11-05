@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using System;
 public class SpawnEnemy : MonoBehaviour
 {
 
@@ -15,9 +14,7 @@ public class SpawnEnemy : MonoBehaviour
     private float tiempoEnemigos;// variable para el tiempo de aparicion de enemigos
     private float tiempoSiguienteEnemigo; //variable para comprobar cuando hacer la aparicion
 
-    [SerializeField]
-    private int cantidadEnemigos;// variable para elegir cuantos enemigos apareceran desde el spawn
-    private int enemigosFaltante;
+
 
 
     // Start is called before the first frame update
@@ -28,25 +25,18 @@ public class SpawnEnemy : MonoBehaviour
         maxY = puntos.Max(punto => punto.position.y);
         maxY = puntos.Min(punto => punto.position.y);
 
-        UnityEngine.Random.seed =  (int)System.DateTime.Now.Ticks;
-        enemigosFaltante = cantidadEnemigos;
-
-       // if(Math.Abs(minY) < Math.Abs(maxY))
-         //   maxY = minY;
-        //if(Math.Abs(minX) < Math.Abs(maxX))
-         //   maxX = minX;
+        Random.seed =  (int)System.DateTime.Now.Ticks;
     }
 
     // Update is called once per frame
     void Update()
     {
         tiempoSiguienteEnemigo+= Time.deltaTime;
-        if(tiempoSiguienteEnemigo >= tiempoEnemigos && cantidadEnemigos> 0)
+        if(tiempoSiguienteEnemigo >= tiempoEnemigos)
         {
             tiempoSiguienteEnemigo = 0;
             // crear enemigo
             CrearEnemigo();
-            cantidadEnemigos-= 1;
         }
     }
 
@@ -57,8 +47,8 @@ public class SpawnEnemy : MonoBehaviour
         //minX = puntos.Min(puntos => puntos.position.x);
         //maxX = puntos.Max(puntos => puntos.position.y);
         //maxX = puntos.Min(puntos => puntos.position.y);
-        int numeroEnemigo = UnityEngine.Random.Range(0,enemigos.Length);
-        Vector2 posicion = new Vector2(maxX,maxY);
+        int numeroEnemigo = Random.Range(0,enemigos.Length);
+        Vector2 posicion = new Vector2(Random.Range(minX,maxX),Random.Range(minY,maxY));
         Instantiate(enemigos[numeroEnemigo],posicion,Quaternion.identity);
     }
 

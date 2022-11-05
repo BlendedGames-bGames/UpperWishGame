@@ -167,9 +167,9 @@ GameObject:
   - component: {fileID: 719734843}
   - component: {fileID: 719734842}
   - component: {fileID: 719734846}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Grassland_Terrain_Tileset_1
-  m_TagString: Respawn
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -281,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719734841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.087, y: -1.02, z: 0}
+  m_LocalPosition: {x: 1.239, y: -0.935, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -308,7 +308,6 @@ MonoBehaviour:
   - {fileID: 6374091538595357001, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
   - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
   tiempoEnemigos: 4
-  cantidadEnemigos: 1
 --- !u!1 &740604398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,7 +2522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1306831548}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: puunto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2538,7 +2537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306831547}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.001, y: 0.245, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2603,7 +2602,6 @@ MonoBehaviour:
   - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
   - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
   tiempoEnemigos: 2
-  cantidadEnemigos: 0
 --- !u!1 &1686485597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,6 +3014,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 831f15bb88e00bf49adcad73f71431ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 100
+  isGrounded: 0
+  isMoving: 0
+  isInmune: 0
+  speed: 1
+  jumpForce: 3
+  movHor: 0
+  inmmuneTimeCnt: 0
+  inmmuneTime: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  radius: 0.048
+  groundRayDist: 0.2
+  reiniciar: {fileID: 1134910577}
 --- !u!95 &25298266434728181
 Animator:
   serializedVersion: 4
