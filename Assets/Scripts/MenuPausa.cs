@@ -51,6 +51,7 @@ public class MenuPausa : MonoBehaviour
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
         botonJuego.SetActive(true);
+        menuJuego.SetActive(false);
     }
 
     public void SalirJuego(){
