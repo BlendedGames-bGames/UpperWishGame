@@ -24,6 +24,7 @@ public class MenuPausa : MonoBehaviour
     }
 
     public void Juego(){
+        
         juegoPausado=true;
         Time.timeScale=0f;
         botonJuego.SetActive(false);
@@ -32,12 +33,21 @@ public class MenuPausa : MonoBehaviour
     }
 
     private void Update(){
-        if(Input.GetKeyDown(KeyCode.G)){
+        if(Input.GetKeyDown(KeyCode.P)){
             if(juegoPausado){
                 Reanudar();
             }
             else{
                 Pausa();
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.G)){
+            if(juegoPausado){
+                Reanudar();
+            }
+            else{
+               Juego();
             }
         }
 

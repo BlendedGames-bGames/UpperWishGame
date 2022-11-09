@@ -17,6 +17,7 @@ public class Volumen : MonoBehaviour
         RevisarMute();
     }
 
+
     public void ChangeSlider(float valor){
         sliderValue=valor;
         PlayerPrefs.SetFloat("volumenAudio",sliderValue);
