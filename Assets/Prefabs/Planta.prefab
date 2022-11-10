@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 6374091538595356998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.581, y: -1.111, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6374091538212809954}
@@ -110,7 +110,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7059297670216363161, guid: 326dd6eeaa0ca144ca01194dbacf63fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movimiento: 0
   distancia: 0
-  objetivo: {fileID: 0}
+  objetivo: {fileID: 508672940338934359, guid: 52149bf99bae35d4b8d3e939b925ee19, type: 3}
   Torreta: {fileID: 6374091538212809954}
   Bullet: {fileID: 2772864008000388957, guid: cc5c46082e52a634f83362a4a04d8d01, type: 3}
   time: 1
