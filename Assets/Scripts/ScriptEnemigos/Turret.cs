@@ -10,24 +10,30 @@ public class Turret : MonoBehaviour
     int disparoID;
     private float movHor = 1; 
     public double distancia; //que tan lejos se esta del objetivo
-    public Transform objetivo;  //variable para el objetivo a perseguir
     public Transform Torreta; // sera para saber su rotacion;
     public GameObject Bullet;
+    public GameObject objetivo;
     public float time = 1;
      public bool disparo;
      public int comprobar; // variable para comprobar si movimiento viene de estar atacando o estar a distancia, si es 1, atacando,si es 2 es distancia
     // Start is called before the first frame update
-    void Start()
+
+    
+
+    void Awake()
     {
         movimiento = true;
         anim = GetComponent<Animator>();
         disparoID = Animator.StringToHash("disparar");
+        objetivo = GameObject.Find("kuro");
+        
+
     }
 
     void FixedUpdate()
     {
-        double distanciaX = objetivo.position.x - transform.position.x;
-        double distanciaY = objetivo.position.y - transform.position.y;
+        double distanciaX = objetivo.transform.position.x - transform.position.x;
+        double distanciaY = objetivo.transform.position.y - transform.position.y;
         double multDistancia = Math.Pow(distanciaX,2) *Math.Pow(distanciaY,2);
         distancia = Math.Sqrt(multDistancia);
 

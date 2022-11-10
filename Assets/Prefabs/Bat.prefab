@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1304348602445508467}
   - component: {fileID: 1304348602445508466}
   - component: {fileID: 1304348602445508465}
+  - component: {fileID: -1397225241339001622}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -100,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1da614e33cf4d48b21266f0b5e1eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetivo: {fileID: 508672940338934359, guid: 52149bf99bae35d4b8d3e939b925ee19, type: 3}
   speed: 0.32
   debePerseguir: 0
   time: 0
@@ -108,6 +108,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  objetivo: {fileID: 508672940338934359, guid: 52149bf99bae35d4b8d3e939b925ee19, type: 3}
+  data: {fileID: 11400000, guid: 7d8fc872ce103704a896302dd8746fc8, type: 2}
 --- !u!95 &1304348602445508467
 Animator:
   serializedVersion: 4
@@ -165,3 +167,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-1397225241339001622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304348602445508464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  speed: 0
+  health: 0
+  data: {fileID: 11400000, guid: 7d8fc872ce103704a896302dd8746fc8, type: 2}

@@ -5,7 +5,7 @@ using System;
 public class FlyingEnemyV3 : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public Transform objetivo;  //variable para el objetivo a perseguir
+    //public Transform objetivo;  //variable para el objetivo a perseguir
     public float speed;
 
     public bool debePerseguir; //variable para ver si debe perseguir o no
@@ -15,24 +15,30 @@ public class FlyingEnemyV3 : MonoBehaviour
 
     public double distancia; //que tan lejos se esta del objetivo
     public LayerMask groundLayer;
+    public GameObject objetivo;
+    
+    [SerializeField]
+    private EnemyStats data;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); 
         float posicionInicialX = transform.position.x;
         float posicionInicialY = transform.position.y;
-
+        speed = data.speed;
          originalPos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
+         objetivo = GameObject.Find("kuro");
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distanciaX = objetivo.position.x - transform.position.x;
-        float distanciaY = objetivo.position.y - transform.position.y;
+        float distanciaX = objetivo.transform.position.x - transform.position.x;
+        float distanciaY = objetivo.transform.position.y - transform.position.y;
         double multDistancia = Math.Pow(distanciaX,2) *Math.Pow(distanciaY,2);
         distancia = Math.Sqrt(multDistancia);
-        if(Math.Abs(distancia)< 10)
+        if(Math.Abs(distancia)< 40)
         {
             time = 3;
             debePerseguir = true;
@@ -45,7 +51,7 @@ public class FlyingEnemyV3 : MonoBehaviour
         }
         if(debePerseguir == true)
         {
-            transform.position = Vector2.MoveTowards(transform.position,objetivo.position,speed * Time.deltaTime);                 // moveTowards: posicion actual, objetiva y velocidad
+            transform.position = Vector2.MoveTowards(transform.position,objetivo.transform.position,speed * Time.deltaTime);                 // moveTowards: posicion actual, objetiva y velocidad
         }
         if(time < 0)
         {

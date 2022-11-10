@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 6374091538595356996}
   - component: {fileID: 6374091538595356999}
   - component: {fileID: 6612330121752412700}
+  - component: {fileID: 8437874325240018251}
   m_Layer: 0
   m_Name: Planta
   m_TagString: Enemy
@@ -157,9 +158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movimiento: 0
   distancia: 0
-  objetivo: {fileID: 508672940338934359, guid: 52149bf99bae35d4b8d3e939b925ee19, type: 3}
   Torreta: {fileID: 6374091538212809954}
   Bullet: {fileID: 2772864008000388957, guid: cc5c46082e52a634f83362a4a04d8d01, type: 3}
+  objetivo: {fileID: 0}
   time: 1
   disparo: 0
   comprobar: 0
@@ -259,3 +260,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44, y: 0.42}
   m_EdgeRadius: 0
+--- !u!114 &8437874325240018251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374091538595356998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  speed: 0
+  health: 0
+  data: {fileID: 11400000, guid: 384dbb9c4b88a1b4cba9a10eaf480f76, type: 2}
