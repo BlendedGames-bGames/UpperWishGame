@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 	//Objeto scriptable que contiene todos los datos de movimiento del jugador
 	public PlayerMovementData Data;
+	public Transform ChildObject;
 
 	#region COMPONENTS
     public Rigidbody2D RB { get; private set; }
@@ -400,12 +401,19 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Turn()
 	{
+
+		ChildObject.parent = null;
+
 		//da vuelta al objeto jugador
 		Vector3 scale = transform.localScale; 
 		scale.x *= -1;
 		transform.localScale = scale;
 
+		ChildObject.transform.SetParent(this.transform, true);
+		
 		IsFacingRight = !IsFacingRight;
+
+		
 	}
     #endregion
 
