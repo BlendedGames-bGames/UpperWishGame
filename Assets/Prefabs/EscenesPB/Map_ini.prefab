@@ -52,16 +52,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -13, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -7, y: 6, z: 0}
     second:
       serializedVersion: 2
@@ -890,7 +880,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e923b468f71989346ad2423b58fbc15a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7f67a68957942b6499eaa927b8ca3a4e, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e72797ae424150043bde69987de10101, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 37928dba7408ff843ab26b8a189ab4e3, type: 2}
@@ -1005,7 +995,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: -1958612796, guid: 75cdda502a16d6c46a69335afbbc2882, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -1114,7 +1104,7 @@ Tilemap:
   - m_RefCount: 31
     m_Data: {fileID: 1411894378, guid: d931b5cbf357e5b4d9a9cddfe082542a, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 84
+  - m_RefCount: 83
     m_Data:
       e00: 1
       e01: 0
@@ -1133,7 +1123,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 84
+  - m_RefCount: 83
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -5154,6 +5144,10 @@ PrefabInstance:
     - target: {fileID: 8114993345070015882, guid: 6ab5ad7d6b6382c4c91bbbb6b14b4eb4, type: 3}
       propertyPath: m_Name
       value: Map_ini
+      objectReference: {fileID: 0}
+    - target: {fileID: 8114993345452696380, guid: 6ab5ad7d6b6382c4c91bbbb6b14b4eb4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8114993345658180921, guid: 6ab5ad7d6b6382c4c91bbbb6b14b4eb4, type: 3}
       propertyPath: m_Size.x
