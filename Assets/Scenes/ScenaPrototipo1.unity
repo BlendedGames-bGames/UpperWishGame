@@ -4506,6 +4506,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5e9fcd26702094a9b24561c01be3e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Data: {fileID: 0}
+  bullet: {fileID: 0}
+  bulletTransform: {fileID: 0}
+  canFire: 0
 --- !u!1 &182758140
 GameObject:
   m_ObjectHideFlags: 0
@@ -6444,6 +6448,7 @@ MonoBehaviour:
   menuPausa: {fileID: 0}
   botonJuego: {fileID: 0}
   menuJuego: {fileID: 0}
+  Atack: {fileID: 0}
 --- !u!114 &321867189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67575,6 +67580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Data: {fileID: 11400000, guid: 7aacab470c843a74884c68ee87118b85, type: 2}
+  ChildObject: {fileID: 0}
   _groundCheckPoint: {fileID: 734547759}
   _groundCheckSize: {x: 0.49, y: 0.03}
   _frontWallCheckPoint: {fileID: 2147241302}
@@ -67803,6 +67809,7 @@ MonoBehaviour:
   menuPausa: {fileID: 1115950701}
   botonJuego: {fileID: 2046395915}
   menuJuego: {fileID: 321867187}
+  Atack: {fileID: 0}
 --- !u!114 &840139540
 MonoBehaviour:
   m_ObjectHideFlags: 0
