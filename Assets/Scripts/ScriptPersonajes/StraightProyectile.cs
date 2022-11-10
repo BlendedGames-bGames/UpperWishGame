@@ -37,8 +37,7 @@ public class StraightProyectile : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy")) {
 
-            Destroy(collision.gameObject);
-            //collision.gameObject.SetActive(false);
+            collision.gameObject.GetComponent<EnemyController>().getDamage((int)Data.hitDamage);
         }
         Destroy(gameObject);
     }   

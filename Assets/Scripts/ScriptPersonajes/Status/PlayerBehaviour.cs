@@ -7,7 +7,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public PlayerStatusData Data;
 
-    public CharacterStat Health;
+    public int CurrentHealth;
     public CharacterStat Stamina;
     public CharacterStat Strength;
     public CharacterStat Technike;
@@ -17,7 +17,7 @@ public class PlayerBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        CurrentHealth = (int)Data.health.BaseValue;
     }
 
     // Update is called once per frame
@@ -28,8 +28,11 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void getDamage(int damage)
         {
-        Data.health.BaseValue -= damage;
-        if (Data.health.BaseValue <= 0)
+        CurrentHealth -= damage;
+
+        Debug.Log(damage);
+        Debug.Log(CurrentHealth);
+        if (CurrentHealth <= 0)
             {
             Destroy(gameObject);
             }

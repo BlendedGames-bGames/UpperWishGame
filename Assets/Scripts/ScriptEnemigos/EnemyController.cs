@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
+using System.Runtime.Serialization;
+
 public class EnemyController : MonoBehaviour
 {
     //(SEBA): aca meto la lista de enemigos y todo lo que necesito para el script de target nuevo
@@ -85,7 +88,7 @@ public class EnemyController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player")) 
         {
-            Player.obj.getDamage(damage);
+            collision.gameObject.GetComponent<PlayerBehaviour>().getDamage(damage);
 
         }
     }
