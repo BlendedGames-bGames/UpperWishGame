@@ -23,6 +23,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private EnemyStats data;
 
+    public GameObject objetivo;
+    
 
     /*private float minX,maxX,minY,maxY; // variables para posiciones minimas de los puntos para reaparicion
     [SerializeField]
@@ -34,9 +36,10 @@ public class EnemyController : MonoBehaviour
     private float tiempoSiguienteEnemigo; //variable para comprobar cuando hacer la aparicion*/
 
     private void Awake()
-        {
+    {
         enemyList.Add(this);
-        }
+        objetivo = GameObject.Find("kuro");
+    }
 
     //private GameObject player;
     // Start is called before the first frame update
@@ -84,20 +87,22 @@ public class EnemyController : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)// funcion para daño del jugador al colicionar con un enemigo
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player")) 
+        if(collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerBehaviour>().getDamage(damage);
-
+            Debug.Log("Daño al personaje"); //manda un mensaje por consola
+            Player.obj.getDamage(damage);
         }
+        
     }
 
     public void getDamage(int damage)//funcion para recibir daño, en este caso para el enemigo
     {
+        
         health -= damage;
         if(health <= 0){
-            
+            Debug.Log("Daño al enemigo"); //manda un mensaje por consola
             enemyList.Remove(this);
             Destroy(gameObject);
             

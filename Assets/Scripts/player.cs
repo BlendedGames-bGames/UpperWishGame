@@ -6,27 +6,30 @@ public class Player : MonoBehaviour
 {
     public static Player obj;
 
-    public int lives = 3;
-    public bool isGrounded = false;
-    public bool isMoving = false;
-    public bool isInmune = false;
+    public int health;
+    //public bool isGrounded = false;
+    //public bool isMoving = false;
+    //public bool isInmune = false;
 
     public float speed = 5f; //velocidad del pj
     //public Vector2 speedx; Pruebas en caso de que la velocidad fuese un vector
-    public float jumpForce = 3f;  // fuerza con la que puede saltar
-    public float movHor; // //valor para el movimiento horizontal del personaje
+    //public float jumpForce = 3f;  // fuerza con la que puede saltar
+    //public float movHor; // //valor para el movimiento horizontal del personaje
 
-    public float inmmuneTimeCnt = 0f; // variables de inmmunidad
-    public float inmmuneTime = 0.5f;
+    //public float inmmuneTimeCnt = 0f; // variables de inmmunidad
+    //public float inmmuneTime = 0.5f;
 
-    public LayerMask groundLayer; // para saber cuando esta tocando el piso o no
-    public float radius = 0.3f; // esta y la siguiente para saber si el pj esta tocando realmente el piso o no
-    public float groundRayDist = 0.5f;
+    //public LayerMask groundLayer; // para saber cuando esta tocando el piso o no
+    //public float radius = 0.3f; // esta y la siguiente para saber si el pj esta tocando realmente el piso o no
+    //public float groundRayDist = 0.5f;
+
+    [SerializeField]
+    private PlayerStatusData data;
 
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer spr;
-    public GameObject reiniciar;
+    //public GameObject reiniciar;
 
 void Awake()
 {
@@ -41,14 +44,15 @@ void Awake()
         anim = GetComponent<Animator>();
         spr = GetComponent<SpriteRenderer>();
         Time.timeScale=1f;
-        reiniciar.SetActive(false);
+        //reiniciar.SetActive(false);
+        health = (int)data.health.BaseValue;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        movHor = Input.GetAxisRaw("Horizontal");
+       /* movHor = Input.GetAxisRaw("Horizontal");
         isMoving = (movHor != 0f);
 
         // transform.position es la posicion actual, dara verdadero o falso por si el pj esta tocando el piso o no.
@@ -61,17 +65,17 @@ void Awake()
         anim.SetBool("isGrounded",isGrounded);
 
 
-        flip(movHor);
+        flip(movHor);*/
 
     }
     
     void FixedUpdate() //todo lo que esta en su interior funcionara independiente del framerate del juego, todo lo que tiene que ver con fisicas,va aca
     {
-        rb.velocity = new Vector2(movHor * speed, rb.velocity.y); // permite mover al personaje a traves del rigid body, esto es para el movimiento en x en factor de su velocidad
+        //rb.velocity = new Vector2(movHor * speed, rb.velocity.y); // permite mover al personaje a traves del rigid body, esto es para el movimiento en x en factor de su velocidad
 
     }
 
-    public void jump()
+   /* public void jump()
     {
         if (!isGrounded) return;
         rb.velocity = Vector2.up*jumpForce;
@@ -91,19 +95,19 @@ void Awake()
         transform.localScale = theScale;
         
     }
-
+    */
     public void getDamage(int damage)
     {
-        lives -= damage;
-        if(lives <= 0){
+        health -= damage;
+        if(health <= 0){
 
             Destroy(gameObject);
-            Reiniciar();
+            //Reiniciar();
         }
             
     }
 
-    public void addLive()//funcion que añade las vidas en caso de que no sobrepase el maximo permitido.
+   /* public void addLive()//funcion que añade las vidas en caso de que no sobrepase el maximo permitido.
     {
         lives++;
         
@@ -114,10 +118,10 @@ void Awake()
     void OnDestroy()
     {
         obj = null;
-    }
-    public void Reiniciar(){
+    }*/
+    /*public void Reiniciar(){
         reiniciar.SetActive(true);
         Time.timeScale=0f;
 
-    }
+    }*/
 }
