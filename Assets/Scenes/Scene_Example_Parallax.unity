@@ -4543,27 +4543,6 @@ MonoBehaviour:
   - {fileID: 1036793669268453528, guid: 135ed9dc87276cf4aa468847744e40d0, type: 3}
   - {fileID: 2312492455367238150, guid: 18a7c08ff5833c74ea10771288950074, type: 3}
   - {fileID: 6592131079808448661, guid: 18c06d5e30598ad4990528a83d32737c, type: 3}
---- !u!1 &1317289722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4027768489277920512, guid: 8c56f35cb2285e147a2020da37c14748, type: 3}
-  m_PrefabInstance: {fileID: 4027768488503500709}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1317289728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317289722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831f15bb88e00bf49adcad73f71431ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  speed: 5
-  data: {fileID: 11400000, guid: dbd0d989f5b383844adc866190198072, type: 2}
-  reiniciar: {fileID: 40017371}
 --- !u!1 &1322683030
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,6 +6702,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1317289728, guid: 8c56f35cb2285e147a2020da37c14748, type: 3}
+      propertyPath: reiniciar
+      value: 
+      objectReference: {fileID: 40017371}
     - target: {fileID: 4027768489277920512, guid: 8c56f35cb2285e147a2020da37c14748, type: 3}
       propertyPath: m_Name
       value: kuro
@@ -6771,9 +6754,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4027768489379956680, guid: 8c56f35cb2285e147a2020da37c14748, type: 3}
-      propertyPath: orthographic size
-      value: 8.6562805
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1038875620, guid: 8c56f35cb2285e147a2020da37c14748, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8c56f35cb2285e147a2020da37c14748, type: 3}
