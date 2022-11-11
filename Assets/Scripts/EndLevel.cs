@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour
 {
+    public int level = 0;
+
     private void Update()
     {
         AllGetPortal();
@@ -16,7 +18,7 @@ public class EndLevel : MonoBehaviour
         {
             //a
             Debug.Log("Awa de Owo");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + level);
         }
     }
 }
