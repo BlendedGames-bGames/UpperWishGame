@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer spr;
-    //public GameObject reiniciar;
+    public GameObject reiniciar;
 
 void Awake()
 {
@@ -102,7 +102,7 @@ void Awake()
         if(health <= 0){
 
             Destroy(gameObject);
-            //Reiniciar();
+            Reiniciar();
         }
             
     }
@@ -119,9 +119,9 @@ void Awake()
     {
         obj = null;
     }*/
-    /*public void Reiniciar(){
+    public void Reiniciar(){
         reiniciar.SetActive(true);
         Time.timeScale=0f;
 
-    }*/
+    }
 }
