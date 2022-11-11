@@ -44,8 +44,10 @@ void Awake()
         anim = GetComponent<Animator>();
         spr = GetComponent<SpriteRenderer>();
         Time.timeScale=1f;
-        //reiniciar.SetActive(false);
+        reiniciar.SetActive(false);
         health = (int)data.health.BaseValue;
+
+       
 
     }
 
