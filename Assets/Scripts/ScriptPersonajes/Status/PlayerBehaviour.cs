@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    public static PlayerBehaviour obj;
     public PlayerStatusData Data;
 
     public int CurrentHealth;
@@ -18,6 +19,7 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         CurrentHealth = (int)Data.health.BaseValue;
+        obj = this;
     }
 
     // Update is called once per frame

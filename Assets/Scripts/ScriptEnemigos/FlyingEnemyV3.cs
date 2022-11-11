@@ -97,10 +97,10 @@ public class FlyingEnemyV3 : MonoBehaviour
 
     }
 */
-    private void getKilled()
-    {
-        Destroy(gameObject); // funcion que desactiva el objeto
-    } 
+   // private void getKilled()
+    //{
+    //    Destroy(gameObject); // funcion que desactiva el objeto
+    //} 
 
 
 

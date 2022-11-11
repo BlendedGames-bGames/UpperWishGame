@@ -70,15 +70,7 @@ public class SlimeEnemy : MonoBehaviour
 
     }*/
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        // Destruye al enemigo
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            getKilled();
-        }
-
-    }
+    
 
     private void getKilled()
     {

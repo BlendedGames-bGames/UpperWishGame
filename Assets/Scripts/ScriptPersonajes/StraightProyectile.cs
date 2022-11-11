@@ -36,7 +36,7 @@ public class StraightProyectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
 
         if (collision.gameObject.CompareTag("Enemy")) {
-
+            
             collision.gameObject.GetComponent<EnemyController>().getDamage((int)Data.hitDamage);
         }
         Destroy(gameObject);
