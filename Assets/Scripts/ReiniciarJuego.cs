@@ -6,15 +6,22 @@ using UnityEngine.SceneManagement;
 public class ReiniciarJuego : MonoBehaviour
 {
     // Start is called before the first frame update
-   public void Reiniciar()
+    [SerializeField] private GameObject botonPausa;
+    Player player= new Player();
+    public void Reiniciar()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.SetInt("vida",player.health);
+        SceneManager.LoadScene("Starting_Scene");
+
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+       
+        botonPausa.SetActive(false);
+    
     }
 
     public void SalirJuego(){

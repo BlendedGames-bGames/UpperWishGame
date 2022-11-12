@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public static Player obj;
 
-    public int health;
+    public int health=10;
     //public bool isGrounded = false;
     //public bool isMoving = false;
     //public bool isInmune = false;
@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spr;
     public GameObject reiniciar;
+    public bool boton;
+    int vidaActual;
 
 void Awake()
 {
@@ -46,7 +48,9 @@ void Awake()
         Time.timeScale=1f;
         reiniciar.SetActive(false);
         health = (int)data.health.BaseValue;
-
+       
+        health=PlayerPrefs.GetInt("vida",vidaActual);
+    
        
 
     }
@@ -101,6 +105,9 @@ void Awake()
     public void getDamage(int damage)
     {
         health -= damage;
+        vidaActual=health;
+        PlayerPrefs.SetInt("vida",vidaActual);
+        Debug.Log(health);
         if(health <= 0){
             
             Destroy(gameObject);
@@ -122,6 +129,7 @@ void Awake()
         obj = null;
     }*/
     public void Reiniciar(){
+        boton=true;
         reiniciar.SetActive(true);
         Time.timeScale=0f;
 

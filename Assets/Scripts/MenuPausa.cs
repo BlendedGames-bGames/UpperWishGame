@@ -9,12 +9,10 @@ public class MenuPausa : MonoBehaviour
     [SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private GameObject botonJuego;
-    [SerializeField] private GameObject menuJuego;
     [SerializeField] private GameObject Atack;
 
     Scene scena;
    
-
     private bool juegoPausado=false;
 
     public void Pausa(){
@@ -31,7 +29,7 @@ public class MenuPausa : MonoBehaviour
         juegoPausado=true;
         Time.timeScale=0f;
         botonJuego.SetActive(false);
-        menuJuego.SetActive(true);
+       
         botonPausa.SetActive(false);
         Atack.SetActive(false);
     }
@@ -65,7 +63,6 @@ public class MenuPausa : MonoBehaviour
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
         botonJuego.SetActive(true);
-        menuJuego.SetActive(false);
          Atack.SetActive(true);
     }
 
@@ -79,7 +76,6 @@ public class MenuPausa : MonoBehaviour
         PlayerPrefs.SetString("f",nombre);
         Reanudar();
         botonJuego.SetActive(true);
-        menuJuego.SetActive(false);
         botonPausa.SetActive(true);
             
     }
@@ -89,7 +85,6 @@ public class MenuPausa : MonoBehaviour
         PlayerPrefs.DeleteKey("f");
          Reanudar();
         botonJuego.SetActive(true);
-        menuJuego.SetActive(false);
         botonPausa.SetActive(true);
             
     }

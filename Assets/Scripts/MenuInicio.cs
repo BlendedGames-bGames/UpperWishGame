@@ -6,14 +6,12 @@ using UnityEngine.SceneManagement;
 public class MenuInicio : MonoBehaviour
 
 {
-
-   public string scena;
-    public string nombre;
+    Player player= new Player();
 
     public void Jugar(){
-       
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
-     Time.timeScale=1f;
+    PlayerPrefs.SetInt("vida",player.health);
+    Time.timeScale=1f;
     }
 
     public void Salir(){

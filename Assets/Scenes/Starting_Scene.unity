@@ -20190,5 +20190,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: kuro2
       objectReference: {fileID: 0}
+    - target: {fileID: 3824722836054748829, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824722836269951609, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
