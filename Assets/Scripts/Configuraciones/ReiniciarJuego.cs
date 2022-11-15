@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ReiniciarJuego : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject botonPausa;
+    //[SerializeField] private GameObject botonPausa;
     Player player= new Player();
     public void Reiniciar()
     {
@@ -20,7 +20,7 @@ public class ReiniciarJuego : MonoBehaviour
     void Start()
     {
        
-        botonPausa.SetActive(false);
+        //botonPausa.SetActive(false);
     
     }
 

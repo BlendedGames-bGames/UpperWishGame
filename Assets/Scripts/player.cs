@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Player : MonoBehaviour
 {
@@ -32,6 +34,9 @@ public class Player : MonoBehaviour
     public GameObject reiniciar;
     public bool boton;
     int vidaActual;
+    float vidaA;
+    public Image barraDevida;
+    public GameObject barra;
 
 void Awake()
 {
@@ -72,6 +77,8 @@ void Awake()
 
 
         flip(movHor);*/
+        vidaA=(float)health;
+        barraDevida.fillAmount= vidaA/10;
 
     }
     
@@ -129,6 +136,7 @@ void Awake()
         obj = null;
     }*/
     public void Reiniciar(){
+        barra.SetActive(false);
         boton=true;
         reiniciar.SetActive(true);
         Time.timeScale=0f;
