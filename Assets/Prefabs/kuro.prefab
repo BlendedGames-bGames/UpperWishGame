@@ -261,7 +261,6 @@ GameObject:
   - component: {fileID: 4027768489277920525}
   - component: {fileID: 4027768489277920514}
   - component: {fileID: 4027768489277920515}
-  - component: {fileID: 1038875620}
   - component: {fileID: 1317289728}
   m_Layer: 7
   m_Name: kuro
@@ -409,22 +408,6 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
---- !u!114 &1038875620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4027768489277920512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831f15bb88e00bf49adcad73f71431ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  speed: 5
-  data: {fileID: 11400000, guid: dbd0d989f5b383844adc866190198072, type: 2}
-  reiniciar: {fileID: 0}
 --- !u!114 &1317289728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,10 +420,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 831f15bb88e00bf49adcad73f71431ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 10
   speed: 5
   data: {fileID: 11400000, guid: dbd0d989f5b383844adc866190198072, type: 2}
   reiniciar: {fileID: 0}
+  boton: 0
+  barraDevida: {fileID: 0}
+  barra: {fileID: 0}
 --- !u!1 &4027768489379956687
 GameObject:
   m_ObjectHideFlags: 0
