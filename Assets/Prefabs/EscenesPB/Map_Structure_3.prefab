@@ -304,8 +304,8 @@ MonoBehaviour:
   - {fileID: 2082444591}
   enemigos:
   - {fileID: 6374091538595357001, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
-  - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
-  - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
+  - {fileID: 8628741694036599467, guid: 2fdffbf7915ab7c4db0fba5e91b2935f, type: 3}
+  - {fileID: 1581510905573845822, guid: 22b380389051bd6408ed9d80ef59d8aa, type: 3}
   tiempoEnemigos: 3
   cantidadEnemigos: 1
 --- !u!1 &782905122387918791
@@ -718,8 +718,8 @@ MonoBehaviour:
   puntos:
   - {fileID: 1584331558}
   enemigos:
-  - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
-  - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
+  - {fileID: 1581510905573845822, guid: 22b380389051bd6408ed9d80ef59d8aa, type: 3}
+  - {fileID: 8628741694036599467, guid: 2fdffbf7915ab7c4db0fba5e91b2935f, type: 3}
   - {fileID: 6374091538595357001, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
   tiempoEnemigos: 5
   cantidadEnemigos: 1
@@ -5471,8 +5471,8 @@ MonoBehaviour:
   - {fileID: 263117140}
   enemigos:
   - {fileID: 6374091538595357001, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
-  - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
-  - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
+  - {fileID: 1581510905573845822, guid: 22b380389051bd6408ed9d80ef59d8aa, type: 3}
+  - {fileID: 8628741694036599467, guid: 2fdffbf7915ab7c4db0fba5e91b2935f, type: 3}
   tiempoEnemigos: 4
   cantidadEnemigos: 1
 --- !u!1 &6592131079410826787
@@ -7142,9 +7142,9 @@ MonoBehaviour:
   puntos:
   - {fileID: 52906885}
   enemigos:
-  - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
+  - {fileID: 8628741694036599467, guid: 2fdffbf7915ab7c4db0fba5e91b2935f, type: 3}
   - {fileID: 6374091538595357001, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
-  - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
+  - {fileID: 1581510905573845822, guid: 22b380389051bd6408ed9d80ef59d8aa, type: 3}
   tiempoEnemigos: 1
   cantidadEnemigos: 1
 --- !u!1 &6592131079808448661
@@ -12767,9 +12767,9 @@ MonoBehaviour:
   puntos:
   - {fileID: 363006502}
   enemigos:
-  - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
+  - {fileID: 1581510905573845822, guid: 22b380389051bd6408ed9d80ef59d8aa, type: 3}
   - {fileID: 6374091538595357001, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
-  - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
+  - {fileID: 8628741694036599467, guid: 2fdffbf7915ab7c4db0fba5e91b2935f, type: 3}
   tiempoEnemigos: 2
   cantidadEnemigos: 1
 --- !u!1 &7624608697795340430

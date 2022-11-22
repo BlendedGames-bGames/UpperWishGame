@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162521545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.07, y: -5.172, z: 2.8681173}
+  m_LocalPosition: {x: -9.98, y: -4.02, z: 2.8681173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -594,8 +594,8 @@ MonoBehaviour:
   puntos:
   - {fileID: 162521546}
   enemigos:
-  - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
-  - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
+  - {fileID: 8628741694036599467, guid: 2fdffbf7915ab7c4db0fba5e91b2935f, type: 3}
+  - {fileID: 1581510905573845822, guid: 22b380389051bd6408ed9d80ef59d8aa, type: 3}
   tiempoEnemigos: 3
   cantidadEnemigos: 1
 --- !u!50 &2840032902989189549
@@ -12151,8 +12151,8 @@ MonoBehaviour:
   puntos:
   - {fileID: 728882453}
   enemigos:
-  - {fileID: 73204416533735710, guid: 3d5275c8e5585cc449bdadf46e13c833, type: 3}
   - {fileID: 6374091538595357001, guid: a222310d00b60b84b92d1f2a0f3e971d, type: 3}
-  - {fileID: 1304348602445508470, guid: 6cd0c66f0b5f2074696dfdd0bd757ece, type: 3}
+  - {fileID: 8628741694036599467, guid: 2fdffbf7915ab7c4db0fba5e91b2935f, type: 3}
+  - {fileID: 1581510905573845822, guid: 22b380389051bd6408ed9d80ef59d8aa, type: 3}
   tiempoEnemigos: 0
   cantidadEnemigos: 0
