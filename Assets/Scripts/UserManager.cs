@@ -14,8 +14,8 @@ public class UserManager : MonoBehaviour
 
 
     IEnumerator GetText() {
-        string name = 'Gerardo';
-        string password = 'asd123';
+        string name = "Gerardo";
+        string password = "asd123";
         using(UnityWebRequest www = UnityWebRequest.Get($"localhost:3010/player/{name}/{password}"))
         {
         yield return www.SendWebRequest();
@@ -30,7 +30,7 @@ public class UserManager : MonoBehaviour
             Debug.Log(www.downloadHandler.text);
  
             // Or retrieve results as binary data
-            //byte[] results = www.downloadHandler.data;
+            byte[] results = www.downloadHandler.data;
         }
     }
     }
