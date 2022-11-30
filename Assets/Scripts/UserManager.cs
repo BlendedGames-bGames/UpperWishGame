@@ -7,15 +7,23 @@ using UnityEngine.Networking;
 public class UserManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    public string inputName;
+    public string inputPassword;
+    public string name;
+    public string password; 
+    public void Login()
     {
         StartCoroutine(GetText());
     }
+    
 
 
     IEnumerator GetText() {
-        string name = "Gerardo";
-        string password = "asd123";
+        //string name = "Gerardo";
+        //string password = "asd123";
+        name=inputName;
+        password=inputPassword;
+         Debug.Log("Se apreto Login");
         using(UnityWebRequest www = UnityWebRequest.Get($"localhost:3010/player/{name}/{password}"))
         {
         yield return www.SendWebRequest();
@@ -31,8 +39,18 @@ public class UserManager : MonoBehaviour
  
             // Or retrieve results as binary data
             byte[] results = www.downloadHandler.data;
+            }
         }
     }
-    }
     
+    public void lecturaName(string s){
+        inputName=s;
+        Debug.Log(inputName);
+
+    }
+    public void lecturaPassword(string s){
+        inputPassword=s;
+        Debug.Log(inputPassword);
+
+    }
 }
