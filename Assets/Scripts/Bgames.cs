@@ -2,10 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bgames : MonoBehaviour
+[System.Serializable]
+
+public class Bgames 
 {
+
+    string id_players;
+
+
+
+
+
+
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
         
     }
@@ -14,5 +24,5 @@ public class Bgames : MonoBehaviour
     void Update()
     {
         
-    }
+    }*/
 }
