@@ -11,11 +11,28 @@ public class UserManager : MonoBehaviour
     public string inputPassword;
     public string name;
     public string password; 
+    public GameObject reiniciar;
+        public GameObject user;
+
+    public bool v;
     public void Login()
     {
         StartCoroutine(GetText());
     }
     
+
+    void  Update(){
+        
+
+        if(string.IsNullOrEmpty(inputName) || string.IsNullOrEmpty(inputPassword)){
+            v=false;
+            reiniciar.SetActive(false);
+        }
+        else{
+            v=true;
+            reiniciar.SetActive(true);
+        }
+    }
 
 
     IEnumerator GetText() {
@@ -36,7 +53,7 @@ public class UserManager : MonoBehaviour
             // Show results as text
             Debug.Log("holo");
             Debug.Log(www.downloadHandler.text);
- 
+            user.SetActive(false);
             // Or retrieve results as binary data
             byte[] results = www.downloadHandler.data;
             }
