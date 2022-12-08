@@ -35,15 +35,17 @@ public class Dificultad : MonoBehaviour
    
 
     public void Start(){
-        PlayerPrefs.SetInt("vida",20);
+        //PlayerPrefs.SetInt("vida",20);
         //PlayerPrefs.SetInt("Gdificultad",1);
         InvokeRepeating("Dialogo",0f,time);
         int aux=PlayerPrefs.GetInt("Gdificultad",1);
         if(aux==1){
              facil.SetActive(true);
+             PlayerPrefs.SetInt("vida",20);
         }
         if(aux==0){
-            dificil.SetActive(true);   
+            dificil.SetActive(true);
+            PlayerPrefs.SetInt("vida",10); 
         }
 
     }
