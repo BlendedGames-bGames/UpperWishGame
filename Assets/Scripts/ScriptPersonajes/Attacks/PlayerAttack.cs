@@ -1,3 +1,4 @@
+using Mochi.CharacterStats;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class PlayerAttack : MonoBehaviour
     public bool canFire;
     private float timer;
 
+    [SerializeField] private AudioSource ShootSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // En esta region se obtiene la posicion del mouse y la rotacion del punto de disparo para el 
         #region MOUSE_AIM
 
         mouse_position = m_camera.ScreenToWorldPoint(Input.mousePosition);
@@ -35,14 +39,14 @@ public class PlayerAttack : MonoBehaviour
         #region TIMERS
 
         if (!canFire)
-            {
+        {
             timer += Time.deltaTime;
             if(timer > Data.attackInputBufferTime)
-                {
+            {
                 canFire = true;
                 timer = 0;
-                }
             }
+        }
 
         #endregion
 
@@ -50,6 +54,7 @@ public class PlayerAttack : MonoBehaviour
         #region INPUT_HANDLER
         if (Input.GetMouseButton(0) && canFire)
             {
+            canFire = false;
             ShootWeapon();
             }
 
@@ -63,5 +68,6 @@ public class PlayerAttack : MonoBehaviour
     private void ShootWeapon()
         {
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            ShootSFX.Play();
         }
 }

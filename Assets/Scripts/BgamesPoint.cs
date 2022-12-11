@@ -14,8 +14,6 @@ public class BgamesPoint : MonoBehaviour
     {
         StartCoroutine(GetPoints());
     }
-    
-
 
     IEnumerator GetPoints() {
          Debug.Log("Se consiguieron los atributos");

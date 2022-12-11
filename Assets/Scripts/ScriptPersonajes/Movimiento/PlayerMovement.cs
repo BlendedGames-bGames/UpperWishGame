@@ -7,8 +7,9 @@ public class PlayerMovement : MonoBehaviour
 	//Objeto scriptable que contiene todos los datos de movimiento del jugador
 	public PlayerMovementData Data;
 	public Transform ChildObject;
+	public KuroAnimation KuroAnim { get; private set; }
 
-	#region COMPONENTS
+    #region COMPONENTS
     public Rigidbody2D RB { get; private set; }
 	#endregion
 
@@ -64,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private Transform _backWallCheckPoint;
 	[SerializeField] private Vector2 _wallCheckSize = new Vector2(0.5f, 1f);
 
+	[SerializeField] private AudioSource footstepSFX; 
+
     #endregion
 
     #region LAYERS & TAGS
@@ -76,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
 	{
 		RB = GetComponent<Rigidbody2D>();
+		KuroAnim = GetComponent<KuroAnimation>();
 	}
 
 	private void Start()
@@ -104,12 +108,20 @@ public class PlayerMovement : MonoBehaviour
 		_moveInput.y = Input.GetAxisRaw("Vertical");
 
 		if (_moveInput.x != 0)
+		{
 			CheckDirectionToFace(_moveInput.x > 0);
-
-		if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
-        {
-			OnJumpInput();
+            if (LastOnGroundTime > 0)
+	        {
+                footstepSFX.enabled = true;
+            }
         }
+         else footstepSFX.enabled = false;
+ 
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
+        {
+			OnJumpInput();    
+            }
 
 		if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
 		{
@@ -121,15 +133,19 @@ public class PlayerMovement : MonoBehaviour
 			OnDashInput();
 		}
 
-		#endregion
+        
 
-		#region COLLISION_CHECKS
-		if (!IsDashing && !IsJumping)
+        #endregion
+
+        #region COLLISION_CHECKS
+        if (!IsDashing && !IsJumping)
 		{
+
 			//Check de suelo
 			if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) && !IsJumping)	//chequea si el componente se sobrepone al suelo
 			{
 				LastOnGroundTime = Data.coyoteTime; // De ser asi, se ejecuta el coyote time
+				KuroAnim.touchedWall = false;
             }		
 
 			//Check de muralla derecha
@@ -153,8 +169,13 @@ public class PlayerMovement : MonoBehaviour
 		{
 			IsJumping = false;
 
-			if(!IsWallJumping)
-				_isJumpFalling = true;
+			if (!IsWallJumping)
+				{
+                _isJumpFalling = true;
+				KuroAnim.touchedWall = false;
+                }
+				
+			
 		}
 
 		if (IsWallJumping && Time.time - _wallJumpStartTime > Data.wallJumpTime)
@@ -165,8 +186,7 @@ public class PlayerMovement : MonoBehaviour
 		if (LastOnGroundTime > 0 && !IsJumping && !IsWallJumping)
         {
 			_isJumpCut = false;
-
-			if(!IsJumping)
+            if (!IsJumping)
 				_isJumpFalling = false;
 		}
 
@@ -180,6 +200,8 @@ public class PlayerMovement : MonoBehaviour
 				_isJumpCut = false;
 				_isJumpFalling = false;
 				Jump();
+
+				KuroAnim.startedJumping = true;
 			}
 			//Salto en Muro
 			else if (CanWallJump() && LastPressedJumpTime > 0)
@@ -300,7 +322,10 @@ public class PlayerMovement : MonoBehaviour
 
 		//Control del desliz en muro
 		if (IsSliding)
+			{
 			Slide();
+			KuroAnim.touchedWall = true;
+			}
     }
 
     #region INPUT_CALLBACKS

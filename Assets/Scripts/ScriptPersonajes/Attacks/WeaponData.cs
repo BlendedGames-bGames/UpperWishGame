@@ -13,6 +13,6 @@ public class WeaponData : ScriptableObject
     public float attacksUntilColdown;           // Cantidad de ataques que se pueden efectuar antes del tiempo de enfriamiento 
     public float attackColdownReset;            // Tiempo de combo no finalizado en lo que se resetea la cantidad de ataques necesarios para entrar en coldown
     [Space(5)]
-    [Range(0.01f, 0.5f)] public float attackInputBufferTime;
+    [Range(0.01f, 5.0f)] public float attackInputBufferTime;
     #endregion
     }

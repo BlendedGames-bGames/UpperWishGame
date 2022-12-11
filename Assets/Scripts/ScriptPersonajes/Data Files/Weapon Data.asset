@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49beeb3da9c3e340aed0c79ac9bf3a6, type: 3}
   m_Name: Weapon Data
   m_EditorClassIdentifier: 
-  attackTimes: 3
-  attackDistance: 40
-  attackColdown: 0.4
-  attacksUntilColdown: 5
+  attackTimes: 1
+  attackDistance: 2
+  attackColdown: 2
+  attacksUntilColdown: 3
   attackColdownReset: 4
-  attackInputBufferTime: 0.5
+  attackInputBufferTime: 0.3
