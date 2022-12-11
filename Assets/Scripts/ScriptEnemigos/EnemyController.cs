@@ -38,7 +38,7 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         enemyList.Add(this);
-        objetivo = GameObject.Find("kuro");
+        objetivo = GameObject.Find("kuro2");
     }
 
     //private GameObject player;

@@ -9,14 +9,7 @@ public class ReiniciarJuego : MonoBehaviour
     [SerializeField] private GameObject botonPausa;
      [SerializeField] private GameObject barra;
     Player player= new Player();
-    public void Reiniciar()
-    {
-        PlayerPrefs.SetInt("vida",player.health);
-        SceneManager.LoadScene("Starting_Scene");
-
-        
-    }
-
+    
     // Update is called once per frame
     void Start()
     {
@@ -31,4 +24,13 @@ public class ReiniciarJuego : MonoBehaviour
     public void SalirJuego(){
         SceneManager.LoadScene("Menu");
     }
+
+    public void Reiniciar()
+    {
+        PlayerPrefs.SetInt("vida",player.health);
+        SceneManager.LoadScene("Starting_Scene");
+
+        
+    }
+
 }

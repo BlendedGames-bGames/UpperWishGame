@@ -10,6 +10,7 @@ public class MenuPausa : MonoBehaviour
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private GameObject Atack;
     [SerializeField] private GameObject check;
+    [SerializeField] private GameObject barra;
 
     Scene scena;
    
@@ -22,6 +23,7 @@ public class MenuPausa : MonoBehaviour
         menuPausa.SetActive(true);
         Atack.SetActive(false);
         check.SetActive(false);
+        barra.SetActive(false);
     }
 
 
@@ -46,6 +48,7 @@ public class MenuPausa : MonoBehaviour
         menuPausa.SetActive(false);         
         Atack.SetActive(true);
         check.SetActive(true);
+        barra.SetActive(true);
     }
 
     public void SalirJuego(){
