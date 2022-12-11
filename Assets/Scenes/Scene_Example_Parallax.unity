@@ -639,8 +639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonPausa: {fileID: 712424258}
   menuPausa: {fileID: 156251822}
-  Atack: {fileID: 0}
-  check: {fileID: 0}
+  Atack: {fileID: 1212211024}
+  check: {fileID: 1212211023}
   barra: {fileID: 1641759869}
 --- !u!114 &90468018
 MonoBehaviour:
@@ -5952,8 +5952,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: kuro2
       objectReference: {fileID: 0}
+    - target: {fileID: 3824722836054748829, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+      propertyPath: reiniciar
+      value: 
+      objectReference: {fileID: 40017371}
+    - target: {fileID: 3824722836054748829, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+      propertyPath: barraDevida
+      value: 
+      objectReference: {fileID: 1352682160}
+    - target: {fileID: 3824722836269951609, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+      propertyPath: reiniciar
+      value: 
+      objectReference: {fileID: 40017371}
+    - target: {fileID: 3824722836269951609, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+      propertyPath: barraDevida
+      value: 
+      objectReference: {fileID: 1352682160}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+--- !u!1 &1212211023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 212134544027691232, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+  m_PrefabInstance: {fileID: 1212211022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1212211024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 212134543309310661, guid: 984a32eff7e4514488ba7d77e0830dc9, type: 3}
+  m_PrefabInstance: {fileID: 1212211022}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1219745468
 GameObject:
   m_ObjectHideFlags: 0
