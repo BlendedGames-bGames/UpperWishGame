@@ -806,7 +806,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 22
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1787,8 +1787,8 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a20a19c276cb8ba498c1f952208f0d66, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -2037467915, guid: 75cdda502a16d6c46a69335afbbc2882, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -1407665518, guid: 75cdda502a16d6c46a69335afbbc2882, type: 3}
   - m_RefCount: 1
@@ -1831,8 +1831,8 @@ Tilemap:
     m_Data: {fileID: 1506214628, guid: 75cdda502a16d6c46a69335afbbc2882, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 302275384, guid: 75cdda502a16d6c46a69335afbbc2882, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -2037467915, guid: 75cdda502a16d6c46a69335afbbc2882, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 199995528, guid: 75cdda502a16d6c46a69335afbbc2882, type: 3}
   - m_RefCount: 1
@@ -10971,7 +10971,7 @@ GameObject:
   - component: {fileID: 227888565308910517}
   - component: {fileID: 227888565308910516}
   - component: {fileID: 1512846239679941885}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11363,7 +11363,7 @@ GameObject:
   - component: {fileID: 9032884116758528904}
   m_Layer: 0
   m_Name: Idle (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11461,7 +11461,7 @@ GameObject:
   - component: {fileID: 8612775793714706601}
   m_Layer: 0
   m_Name: Idle (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11596,7 +11596,7 @@ GameObject:
   - component: {fileID: 6901380785471279692}
   m_Layer: 0
   m_Name: Idle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11694,7 +11694,7 @@ GameObject:
   - component: {fileID: 6400973055389683952}
   m_Layer: 0
   m_Name: Idle (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11792,7 +11792,7 @@ GameObject:
   - component: {fileID: 4454684320438839082}
   m_Layer: 0
   m_Name: Idle (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11890,7 +11890,7 @@ GameObject:
   - component: {fileID: 7237367087392053675}
   m_Layer: 0
   m_Name: Idle (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
