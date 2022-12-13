@@ -17,4 +17,4 @@ MonoBehaviour:
   attackColdown: 2
   attacksUntilColdown: 3
   attackColdownReset: 4
-  attackInputBufferTime: 0.3
+  attackInputBufferTime: 0.5
