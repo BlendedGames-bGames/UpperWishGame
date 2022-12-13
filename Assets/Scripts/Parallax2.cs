@@ -23,7 +23,7 @@ public class Parallax2 : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, startpos + dist, transform.position.z);
 
-        if (temp > startpos + length) startpos += length;
-        else if (temp < startpos - length) startpos -= length;
+        if (temp < startpos + length) startpos += length;
+        else if (temp > startpos - length) startpos -= length;
     }
 }
