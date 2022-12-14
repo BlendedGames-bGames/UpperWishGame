@@ -12,9 +12,12 @@ public class UserManager : MonoBehaviour
     public string name;
     public string password; 
     public GameObject reiniciar;
-        public GameObject user;
+    public GameObject user;
+    public GameObject bgames;
+    public GameObject mensajeError;
 
     public bool v;
+
     public void Login()
     {
         StartCoroutine(GetText());
@@ -40,13 +43,15 @@ public class UserManager : MonoBehaviour
         //string password = "asd123";
         name=inputName;
         password=inputPassword;
-         Debug.Log("Se apreto Login");
+        //Debug.Log("Se apreto Login");
         using(UnityWebRequest www = UnityWebRequest.Get($"localhost:3010/player/{name}/{password}"))
         {
         yield return www.SendWebRequest();
         Debug.Log("llego");
         if(www.isNetworkError || www.isHttpError) {
             Debug.Log("holi");
+             PlayerPrefs.SetInt("log",0);
+             mensajeError.SetActive(true);
             Debug.Log(www.error);
         }
         else {
@@ -54,6 +59,8 @@ public class UserManager : MonoBehaviour
             Debug.Log("holo");
             Debug.Log(www.downloadHandler.text);
             user.SetActive(false);
+            bgames.SetActive(true);
+            PlayerPrefs.SetInt("log",1);
             // Or retrieve results as binary data
             byte[] results = www.downloadHandler.data;
             }

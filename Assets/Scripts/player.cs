@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
     public static Player obj;
 
-    public int health=10;
+    public int health;
     //public bool isGrounded = false;
     //public bool isMoving = false;
     //public bool isInmune = false;
@@ -31,12 +31,11 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer spr;
-    public GameObject reiniciar;
-    public bool boton;
+    public GameObject gameover;
     int vidaActual;
     float vidaA;
     public Image barraDevida;
-    public GameObject barra;
+    int aux;
 
 void Awake()
 {
@@ -51,10 +50,10 @@ void Awake()
         anim = GetComponent<Animator>();
         spr = GetComponent<SpriteRenderer>();
         Time.timeScale=1f;
-        reiniciar.SetActive(false);
+        gameover.SetActive(false);
         health = (int)data.health.BaseValue;
-       
-        health=PlayerPrefs.GetInt("vida",vidaActual);
+        aux=PlayerPrefs.GetInt("vida");
+        health=PlayerPrefs.GetInt("vida");
     
        
 
@@ -77,8 +76,9 @@ void Awake()
 
 
         flip(movHor);*/
+        
         vidaA=(float)health;
-        barraDevida.fillAmount= vidaA/10;
+        barraDevida.fillAmount= vidaA/20;
 
     }
     
@@ -136,9 +136,7 @@ void Awake()
         obj = null;
     }*/
     public void Reiniciar(){
-        barra.SetActive(false);
-        boton=true;
-        reiniciar.SetActive(true);
+        gameover.SetActive(true);
         Time.timeScale=0f;
 
     }

@@ -3,17 +3,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using TMPro;
 
 public class BgamesPoint : MonoBehaviour
 {
 
 // Start is called before the first frame update
     public string idPlayer = "0";
- 
+    private int puntos;
+    int social;
+    int fisica;
+    int afectivo;
+    int cognitivo;
+    int linguistico;
 
-    public void Start()
+    public TMP_Text textFisico;
+    public TMP_Text textSocial;
+    public TMP_Text textAfectivo;
+    public TMP_Text textCognitivo;
+    public TMP_Text textLinguistico;
+    int log;
+    
+    public void Start(){
+
+         PlayerPrefs.SetInt("log",0);
+    }
+
+    public void GetBgames()
     {
-        StartCoroutine(GetPoints());
+       
+        log=PlayerPrefs.GetInt("log");
+        if(log==1){
+            StartCoroutine(GetPoints());    
+
+        }
+        
     }
 
     IEnumerator GetPoints() {
@@ -42,9 +66,25 @@ public class BgamesPoint : MonoBehaviour
             Debug.Log(attributeList[2].name + ": " + attributeList[2].data);
             Debug.Log(attributeList[3].name + ": " + attributeList[3].data);
             Debug.Log(attributeList[4].name + ": " + attributeList[4].data);
+
+            social=attributeList[0].data;
+            fisica=attributeList[1].data;
+            afectivo=attributeList[2].data;
+            cognitivo=attributeList[3].data;
+            linguistico=attributeList[4].data;
             }
     }
     
+    public void Update(){
+        
+       
+        textFisico.text=fisica.ToString();
+        textSocial.text=social.ToString();
+        textCognitivo.text=cognitivo.ToString();
+        textAfectivo.text=afectivo.ToString();
+        textLinguistico.text=linguistico.ToString();
+    
+    }
     
 
 }

@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botonPausa: {fileID: 712424258}
-  barra: {fileID: 955553176}
+  barra: {fileID: 2078760156}
 --- !u!114 &40017373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9676,6 +9676,11 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &283297430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8187827681824058208, guid: e1f97543fc04fa14b99ddbebdb990464, type: 3}
+  m_PrefabInstance: {fileID: 376720083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &293449403
 GameObject:
   m_ObjectHideFlags: 0
@@ -31991,6 +31996,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8187827681824058223, guid: e1f97543fc04fa14b99ddbebdb990464, type: 3}
   m_PrefabInstance: {fileID: 376720083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &821743188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283297430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831f15bb88e00bf49adcad73f71431ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  speed: 5
+  data: {fileID: 11400000, guid: dbd0d989f5b383844adc866190198072, type: 2}
+  gameover: {fileID: 40017371}
+  barraDevida: {fileID: 1361611996}
 --- !u!1 &823376602
 GameObject:
   m_ObjectHideFlags: 0
