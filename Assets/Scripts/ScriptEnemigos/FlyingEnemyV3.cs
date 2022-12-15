@@ -28,7 +28,7 @@ public class FlyingEnemyV3 : MonoBehaviour
         float posicionInicialY = transform.position.y;
         speed = data.speed;
          originalPos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
-         objetivo = GameObject.Find("kuro");
+         objetivo = GameObject.Find("Kuro(WIP)");
     }
 
     // Update is called once per frame

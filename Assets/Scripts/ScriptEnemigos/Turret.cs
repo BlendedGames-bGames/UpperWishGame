@@ -25,7 +25,7 @@ public class Turret : MonoBehaviour
         movimiento = true;
         anim = GetComponent<Animator>();
         disparoID = Animator.StringToHash("disparar");
-        objetivo = GameObject.Find("kuro2");
+        objetivo = GameObject.Find("Kuro(WIP)");
         
 
     }
