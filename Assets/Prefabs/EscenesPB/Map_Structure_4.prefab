@@ -4580,7 +4580,7 @@ GameObject:
   - component: {fileID: 2845601154947136985}
   - component: {fileID: 2845601154947136984}
   - component: {fileID: 6333086231681654496}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Background3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

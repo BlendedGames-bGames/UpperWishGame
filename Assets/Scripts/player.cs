@@ -115,8 +115,8 @@ void Awake()
         vidaActual=health;
         PlayerPrefs.SetInt("vida",vidaActual);
         Debug.Log(health);
-        if(health <= 0){
-            
+        if(health <= 0)
+        {
             Destroy(gameObject);
             Reiniciar();
         }

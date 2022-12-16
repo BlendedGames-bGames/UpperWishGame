@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 298980738022423503}
   - component: {fileID: 4005723679463109186}
   - component: {fileID: 8253180286064284089}
-  - component: {fileID: 7877279894798134788}
+  - component: {fileID: 1811233256735991731}
   m_Layer: 0
   m_Name: Idle (18)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.053054743}
   m_EdgeRadius: 0
---- !u!114 &7877279894798134788
+--- !u!114 &1811233256735991731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,14 +160,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 202333069453251222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &1952561432785735932
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,12 +174,11 @@ GameObject:
   - component: {fileID: 90544402971042592}
   - component: {fileID: 7002571680058502841}
   - component: {fileID: 3354530860912428254}
-  - component: {fileID: 3620922737858503131}
   - component: {fileID: 5497740785557708537}
-  - component: {fileID: 3372964091139295428}
+  - component: {fileID: 4994156947683329636}
   m_Layer: 0
   m_Name: Idle (10)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,22 +288,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &3620922737858503131
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952561432785735932}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &5497740785557708537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -336,7 +314,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14415228, y: 0.06098458}
   m_EdgeRadius: 0
---- !u!114 &3372964091139295428
+--- !u!114 &4994156947683329636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,14 +323,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1952561432785735932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &2552230072485076264
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,12 +337,11 @@ GameObject:
   - component: {fileID: 7497252780022391041}
   - component: {fileID: 4679598960035319684}
   - component: {fileID: 965591746222521357}
-  - component: {fileID: 6699442248240919828}
   - component: {fileID: 2949247300234342037}
-  - component: {fileID: 8151392950790727819}
+  - component: {fileID: 7772983612853074665}
   m_Layer: 0
   m_Name: Idle (16)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -479,22 +451,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &6699442248240919828
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2552230072485076264}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &2949247300234342037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -521,7 +477,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14415228, y: 0.06098458}
   m_EdgeRadius: 0
---- !u!114 &8151392950790727819
+--- !u!114 &7772983612853074665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -530,14 +486,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2552230072485076264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &2775054575442095688
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,10 +501,10 @@ GameObject:
   - component: {fileID: 3748740224408095459}
   - component: {fileID: 7954973888124276419}
   - component: {fileID: 5434703368675738157}
-  - component: {fileID: 8615045447650425998}
+  - component: {fileID: 796350330290071420}
   m_Layer: 0
   m_Name: Idle (14)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -689,7 +640,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.053054743}
   m_EdgeRadius: 0
---- !u!114 &8615045447650425998
+--- !u!114 &796350330290071420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -698,14 +649,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2775054575442095688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &3583332907589753002
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,10 +664,10 @@ GameObject:
   - component: {fileID: 8261714192780275256}
   - component: {fileID: 1232178995119101566}
   - component: {fileID: 7715534250924431798}
-  - component: {fileID: 4136056064957319200}
+  - component: {fileID: 8877663923541173102}
   m_Layer: 0
   m_Name: Idle (9)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -857,7 +803,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.053054743}
   m_EdgeRadius: 0
---- !u!114 &4136056064957319200
+--- !u!114 &8877663923541173102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -866,14 +812,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3583332907589753002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &3633042194802106096
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,10 +827,10 @@ GameObject:
   - component: {fileID: 6268761855987332935}
   - component: {fileID: 731283528778088401}
   - component: {fileID: 4530648900097681720}
-  - component: {fileID: 913179269874062337}
+  - component: {fileID: 785680488448020250}
   m_Layer: 0
   m_Name: Idle (8)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1025,7 +966,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14810926, y: 0.053054824}
   m_EdgeRadius: 0
---- !u!114 &913179269874062337
+--- !u!114 &785680488448020250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1034,14 +975,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3633042194802106096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &4435649074214917593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,12 +989,11 @@ GameObject:
   - component: {fileID: 4886224986338417881}
   - component: {fileID: 251840425876399481}
   - component: {fileID: 2021264836102697406}
-  - component: {fileID: 8035238146021830843}
   - component: {fileID: 6423185971103819290}
-  - component: {fileID: 6697270136910134947}
+  - component: {fileID: 409362676337974195}
   m_Layer: 0
   m_Name: Idle (13)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1168,22 +1103,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &8035238146021830843
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4435649074214917593}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &6423185971103819290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1210,7 +1129,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14415228, y: 0.06098458}
   m_EdgeRadius: 0
---- !u!114 &6697270136910134947
+--- !u!114 &409362676337974195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1219,14 +1138,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4435649074214917593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &4883004406631404732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,10 +1153,10 @@ GameObject:
   - component: {fileID: 7394309958946587130}
   - component: {fileID: 5714188901065631216}
   - component: {fileID: 1320173137609634882}
-  - component: {fileID: 2632869526174816892}
+  - component: {fileID: 5140008619743646195}
   m_Layer: 0
   m_Name: Idle (12)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1378,7 +1292,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.053054743}
   m_EdgeRadius: 0
---- !u!114 &2632869526174816892
+--- !u!114 &5140008619743646195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1387,14 +1301,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4883004406631404732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &5755242458363414020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,12 +1315,11 @@ GameObject:
   - component: {fileID: 5141326057648760244}
   - component: {fileID: 6303000331509407167}
   - component: {fileID: 8721552326468233451}
-  - component: {fileID: 1560915057428256716}
   - component: {fileID: 7174512667260479281}
-  - component: {fileID: 3991418731119329277}
+  - component: {fileID: 8703729056127750806}
   m_Layer: 0
   m_Name: Idle (19)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1521,22 +1429,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &1560915057428256716
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5755242458363414020}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &7174512667260479281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1563,7 +1455,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14415228, y: 0.06098458}
   m_EdgeRadius: 0
---- !u!114 &3991418731119329277
+--- !u!114 &8703729056127750806
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1572,14 +1464,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5755242458363414020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &6663266295277913824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,12 +1478,11 @@ GameObject:
   - component: {fileID: 5065671489768356573}
   - component: {fileID: 5199563423285974875}
   - component: {fileID: 6962794313466511496}
-  - component: {fileID: 9170071441416205634}
   - component: {fileID: 4109239826087806827}
-  - component: {fileID: 1854553477702897797}
+  - component: {fileID: 5279918790040621206}
   m_Layer: 0
   m_Name: Idle (22)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1706,22 +1592,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &9170071441416205634
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6663266295277913824}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &4109239826087806827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1748,7 +1618,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14415228, y: 0.06098458}
   m_EdgeRadius: 0
---- !u!114 &1854553477702897797
+--- !u!114 &5279918790040621206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1757,14 +1627,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6663266295277913824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &7649820770095124333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,12 +1641,11 @@ GameObject:
   - component: {fileID: 7811272358013427782}
   - component: {fileID: 2888608060730359592}
   - component: {fileID: 1150865837005977938}
-  - component: {fileID: 6677253706772022726}
   - component: {fileID: 8663275509015576330}
-  - component: {fileID: 3832962836640057323}
+  - component: {fileID: 1019007877631937584}
   m_Layer: 0
   m_Name: Idle (15)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1891,22 +1755,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &6677253706772022726
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7649820770095124333}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &8663275509015576330
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1933,7 +1781,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14415228, y: 0.06098458}
   m_EdgeRadius: 0
---- !u!114 &3832962836640057323
+--- !u!114 &1019007877631937584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1942,14 +1790,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7649820770095124333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8168503467800049469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,10 +1805,10 @@ GameObject:
   - component: {fileID: 8168503467800049465}
   - component: {fileID: 8168503467800049464}
   - component: {fileID: 8168503467800049415}
-  - component: {fileID: 8168503467800049414}
+  - component: {fileID: 5241687667805008631}
   m_Layer: 0
   m_Name: Idle (2)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,7 +1944,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13624352, y: 0.060958393}
   m_EdgeRadius: 0
---- !u!114 &8168503467800049414
+--- !u!114 &5241687667805008631
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2110,14 +1953,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168503467800049469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8168503467872363639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,10 +1968,10 @@ GameObject:
   - component: {fileID: 8168503467872363635}
   - component: {fileID: 8168503467872363634}
   - component: {fileID: 8168503467872363633}
-  - component: {fileID: 8168503467872363632}
+  - component: {fileID: 5031327630296969887}
   m_Layer: 0
   m_Name: Idle (3)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2269,7 +2107,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14810926, y: 0.053054824}
   m_EdgeRadius: 0
---- !u!114 &8168503467872363632
+--- !u!114 &5031327630296969887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2278,14 +2116,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168503467872363639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8168503468021039980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,12 +2130,11 @@ GameObject:
   - component: {fileID: 8168503468021039981}
   - component: {fileID: 8168503468021039976}
   - component: {fileID: 8168503468021039979}
-  - component: {fileID: 8168503468021039978}
   - component: {fileID: 8168503468021039990}
-  - component: {fileID: 8168503468021039977}
+  - component: {fileID: 1650326996840674608}
   m_Layer: 0
   m_Name: Idle (7)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2412,22 +2244,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &8168503468021039978
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8168503468021039980}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &8168503468021039990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2454,7 +2270,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13225752, y: 0.061008386}
   m_EdgeRadius: 0
---- !u!114 &8168503468021039977
+--- !u!114 &1650326996840674608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2463,14 +2279,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168503468021039980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8168503468566526106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,7 +2293,7 @@ GameObject:
   - component: {fileID: 8168503468566526107}
   m_Layer: 0
   m_Name: spikes
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2535,12 +2346,11 @@ GameObject:
   - component: {fileID: 8168503468707887129}
   - component: {fileID: 8168503468707887332}
   - component: {fileID: 8168503468707887335}
-  - component: {fileID: 8168503468707887334}
   - component: {fileID: 8168503468707887330}
-  - component: {fileID: 8168503468707887333}
+  - component: {fileID: 4506885501926698406}
   m_Layer: 0
   m_Name: Idle (6)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2650,22 +2460,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &8168503468707887334
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8168503468707887128}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &8168503468707887330
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2692,7 +2486,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1481053, y: 0.06098847}
   m_EdgeRadius: 0
---- !u!114 &8168503468707887333
+--- !u!114 &4506885501926698406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2701,14 +2495,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168503468707887128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8168503468878405750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,12 +2509,11 @@ GameObject:
   - component: {fileID: 8168503468878405751}
   - component: {fileID: 8168503468878405746}
   - component: {fileID: 8168503468878405749}
-  - component: {fileID: 8168503468878405748}
   - component: {fileID: 8168503468878405744}
-  - component: {fileID: 8168503468878405747}
+  - component: {fileID: 8369207586686697572}
   m_Layer: 0
   m_Name: Idle (5)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2835,22 +2623,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &8168503468878405748
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8168503468878405750}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
 --- !u!61 &8168503468878405744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2877,7 +2649,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14415228, y: 0.06098458}
   m_EdgeRadius: 0
---- !u!114 &8168503468878405747
+--- !u!114 &8369207586686697572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2886,14 +2658,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168503468878405750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8168503468902475211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2906,10 +2673,10 @@ GameObject:
   - component: {fileID: 8168503468902475223}
   - component: {fileID: 8168503468902475222}
   - component: {fileID: 8168503468902475221}
-  - component: {fileID: 8168503468902475220}
+  - component: {fileID: 862790314460679466}
   m_Layer: 0
   m_Name: Idle (1)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3045,7 +2812,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12831257, y: 0.056997456}
   m_EdgeRadius: 0
---- !u!114 &8168503468902475220
+--- !u!114 &862790314460679466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3054,14 +2821,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168503468902475211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8168503469480229421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,10 +2836,10 @@ GameObject:
   - component: {fileID: 8168503469480229416}
   - component: {fileID: 8168503469480229419}
   - component: {fileID: 8168503469480229430}
-  - component: {fileID: 8168503469480229417}
+  - component: {fileID: 2399039571809140883}
   m_Layer: 0
   m_Name: Idle (4)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3213,7 +2975,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.053054743}
   m_EdgeRadius: 0
---- !u!114 &8168503469480229417
+--- !u!114 &2399039571809140883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3222,14 +2984,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168503469480229421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8173712831200932785
 GameObject:
   m_ObjectHideFlags: 0
@@ -9345,10 +9102,10 @@ GameObject:
   - component: {fileID: 7407346164418535187}
   - component: {fileID: 8289211274957747641}
   - component: {fileID: 6839478409043147443}
-  - component: {fileID: 5770047876611121701}
+  - component: {fileID: 7515642820386552814}
   m_Layer: 0
   m_Name: Idle (21)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9484,7 +9241,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.053054743}
   m_EdgeRadius: 0
---- !u!114 &5770047876611121701
+--- !u!114 &7515642820386552814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9493,14 +9250,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8237790690402356634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8646589458253866423
 GameObject:
   m_ObjectHideFlags: 0
@@ -9513,10 +9265,10 @@ GameObject:
   - component: {fileID: 9200254459673810410}
   - component: {fileID: 4201506140554007068}
   - component: {fileID: 5027310101921924395}
-  - component: {fileID: 9107113932608060838}
+  - component: {fileID: 6685674213420343187}
   m_Layer: 0
   m_Name: Idle (20)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9652,7 +9404,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14810926, y: 0.053054824}
   m_EdgeRadius: 0
---- !u!114 &9107113932608060838
+--- !u!114 &6685674213420343187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9661,14 +9413,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8646589458253866423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &8676093364960523553
 GameObject:
   m_ObjectHideFlags: 0
@@ -9681,10 +9428,10 @@ GameObject:
   - component: {fileID: 6835969898457237178}
   - component: {fileID: 4703781705096838256}
   - component: {fileID: 9191966003433124133}
-  - component: {fileID: 3420458990853229356}
+  - component: {fileID: 5044638424830791638}
   m_Layer: 0
   m_Name: Idle (11)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9820,7 +9567,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14810926, y: 0.053054824}
   m_EdgeRadius: 0
---- !u!114 &3420458990853229356
+--- !u!114 &5044638424830791638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9829,14 +9576,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8676093364960523553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
 --- !u!1 &9176534511325733990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9849,10 +9591,10 @@ GameObject:
   - component: {fileID: 7982923147442233727}
   - component: {fileID: 963932166076731076}
   - component: {fileID: 6735979844161383977}
-  - component: {fileID: 1858780951449567332}
+  - component: {fileID: 2230377556389136752}
   m_Layer: 0
   m_Name: Idle (17)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9988,7 +9730,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14810926, y: 0.053054824}
   m_EdgeRadius: 0
---- !u!114 &1858780951449567332
+--- !u!114 &2230377556389136752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9997,11 +9739,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9176534511325733990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9efae68ce89b3949b9940eb129a9959, type: 3}
+  m_Script: {fileID: 11500000, guid: 6beece7fad1894945b78b2b38d04f86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  speed: 0
-  health: 0
-  data: {fileID: 0}
-  objetivo: {fileID: 0}
