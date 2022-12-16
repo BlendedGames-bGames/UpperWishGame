@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using System.Text;
 
 
 public class UserManager : MonoBehaviour
@@ -63,7 +64,13 @@ public class UserManager : MonoBehaviour
             PlayerPrefs.SetInt("log",1);
             // Or retrieve results as binary data
             byte[] results = www.downloadHandler.data;
+            string idstring = Encoding.UTF8.GetString(results);
+            PlayerPrefs.SetString("id",idstring);
             }
+           
+            
+            PlayerPrefs.SetString("nameUser",name);
+            PlayerPrefs.SetString("PassUser",password);
         }
     }
     

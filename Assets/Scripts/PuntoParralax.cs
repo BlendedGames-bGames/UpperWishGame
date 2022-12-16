@@ -5,10 +5,9 @@ using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
 
-public class BgamesPoint : MonoBehaviour
+public class PuntoParralax : MonoBehaviour
 {
-
-// Start is called before the first frame update
+    // Start is called before the first frame update
     public string idPlayer;
     private int puntos;
     int social;
@@ -26,19 +25,9 @@ public class BgamesPoint : MonoBehaviour
     
     public void Start(){
 
-         PlayerPrefs.SetInt("log",0);
+         StartCoroutine(GetPoints());    
     }
 
-    public void GetBgames()
-    {
-       
-        log=PlayerPrefs.GetInt("log");
-        if(log==1){
-            StartCoroutine(GetPoints());    
-
-        }
-        
-    }
 
     IEnumerator GetPoints() {
          Debug.Log("Se consiguieron los atributos");
@@ -86,6 +75,4 @@ public class BgamesPoint : MonoBehaviour
         textLinguistico.text=linguistico.ToString();
     
     }
-    
-
 }

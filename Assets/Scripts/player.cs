@@ -78,7 +78,7 @@ void Awake()
         flip(movHor);*/
         
         vidaA=(float)health;
-        barraDevida.fillAmount= vidaA/20;
+        barraDevida.fillAmount= vidaA/10;
 
     }
     
