@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour
 {
     private Camera m_camera;
     private Vector3 mouse_position;
+    public float firerate;
 
     public WeaponData Data;
     public GameObject bullet;
@@ -20,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         m_camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        firerate = Data.attackInputBufferTime;
     }
 
     // Update is called once per frame
@@ -41,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
         if (!canFire)
         {
             timer += Time.deltaTime;
-            if(timer > Data.attackInputBufferTime)
+            if(timer > firerate)
             {
                 canFire = true;
                 timer = 0;
